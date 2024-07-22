@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Arc Feature with geometry by reference",
+  "$defs": {
+    "PolyhedralFeature": {
+      "allOf": [
+        {
+          "$ref": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.json"
+        },
+        {
+          "properties": {
+            "topology": {
+              "allOf": [
+                {
+                  "$ref": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.json"
+                },
+                {
+                  "oneOf": [
+                    {
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "const": "Polyhedron"
+                        },
+                        "references": {
+                          "type": "array"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "topology"
+          ]
+        }
+      ]
+    },
+    "ContainedFeatureCollection": {
+      "anyOf": [
+        {
+          "$ref": "https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.json"
+        },
+        {
+          "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema.json"
+        }
+      ]
+    }
+  },
+  "oneOf": [
+    {
+      "$ref": "#/$defs/PolyhedralFeature"
+    },
+    {
+      "$ref": "#/$defs/ContainedFeatureCollection"
+    }
+  ]
+}
