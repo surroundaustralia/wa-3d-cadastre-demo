@@ -1,0 +1,11 @@
+{
+  "@context": [
+    "https://raw.githubusercontent.com/surroundaustralia/wa-3d-cadastre-demo/master/build/annotated/bbr/template/mySchema/context.jsonld",
+    {
+      "mynamespace": "http://example.org/ns1/"
+    }
+  ],
+  "a": "mynamespace:aThing",
+  "b": 23,
+  "c": 1
+}
