@@ -2,7 +2,7 @@
   "name": "3D Demo of ICSM 3DCSDM for WA",
   "abstract": "This is an example showing the potential for the WA profile of the ICSM Cadastre Survey Model to be extended to full 3D \n",
   "description": "It extends the topo-feature base to support Polyhedron objects and constrains the WA-Profile to force use of these for parcels of certain types.\n",
-  "modified": "2024-07-22T11:28:34.965095",
+  "modified": "2024-07-22T11:38:45.792651",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"cfd033ddeff18a73d341ee8d95750a54234195e9",
@@ -41,20 +41,20 @@
       ],
       "shaclRules": {
         "ogc.geo.topo.features.topo-feature": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ],
         "ogc.geo.topo.features.topo-feature-collection": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ]
       },
       "shaclClosures": [],
       "dependsOn": [
+        "ogc.geo.features.featureCollection",
         "ogc.geo.topo.features.topo-feature",
-        "ogc.geo.topo.datatypes.topology",
         "ogc.geo.topo.features.topo-feature-collection",
-        "ogc.geo.features.featureCollection"
+        "ogc.geo.topo.datatypes.topology"
       ],
       "ldContext": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/topo-polyhedron/context.jsonld",
       "schema": {

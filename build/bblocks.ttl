@@ -13,12 +13,12 @@
     rdfs:label "Polydron using nested Polygons and Point topology" ;
     dct:abstract "Defines options for describing 3D polyhedrons using features with Point geometry coordinates" ;
     dct:created "2023-11-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://literate-couscous-j7e78pr.pages.github.io/bblock/surround.demo.3dcadastre.topo-polyhedron" ],
+        [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://literate-couscous-j7e78pr.pages.github.io/build/generateddocs/json-full/demo/3dcadastre/topo-polyhedron/index.json" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://literate-couscous-j7e78pr.pages.github.io/build/generateddocs/markdown/demo/3dcadastre/topo-polyhedron/index.md" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://literate-couscous-j7e78pr.pages.github.io/bblock/surround.demo.3dcadastre.topo-polyhedron" ] ;
+            rdfs:isDefinedBy "https://literate-couscous-j7e78pr.pages.github.io/build/generateddocs/markdown/demo/3dcadastre/topo-polyhedron/index.md" ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2023-05-24"^^xsd:date ;
     skos:inScheme <https://literate-couscous-j7e78pr.pages.github.io/> ;
@@ -52,15 +52,15 @@
         <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-07-22T11:28:47.690652"^^xsd:dateTime ;
-    prov:startedAtTime "2024-07-22T11:28:47.632852"^^xsd:dateTime ;
+    prov:endedAtTime "2024-07-22T11:38:54.182088"^^xsd:dateTime ;
+    prov:startedAtTime "2024-07-22T11:38:54.121800"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/json" ;
-            dct:hasVersion "git:2ea9876243f975cb50481ada06ce81a5617c0ef6" ;
-            rdfs:seeAlso <https://literate-couscous-j7e78pr.pages.github.io/build/register.json> ],
-        [ a prov:Entity ;
             dct:format "application/yaml" ;
-            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
+            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
+        [ a prov:Entity ;
+            dct:format "application/json" ;
+            dct:hasVersion "git:79413578709c566dd98beb6a914cdcd3ed133251" ;
+            rdfs:seeAlso <https://literate-couscous-j7e78pr.pages.github.io/build/register.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
