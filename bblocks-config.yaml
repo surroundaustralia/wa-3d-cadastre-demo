@@ -14,6 +14,7 @@ identifier-prefix: surround.demo.3dcadastre
 
 # List of imports ("default" is an alias for the main OGC Building Blocks Register)
 imports:
+  - default
   - https://icsm-au.github.io/3d-csdm-profile-wa/build/register.json
   - https://ogcincubator.github.io/topo-feature/build/register.json
 
