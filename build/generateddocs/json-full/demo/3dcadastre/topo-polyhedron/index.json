@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogcincubator",
   "version": "0.1",
-  "dateOfLastChange": "2023-05-24",
+  "dateOfLastChange": "2024-07-22",
   "sources": [],
   "maturity": "development",
   "scope": "unstable",
@@ -20,20 +20,20 @@
   ],
   "shaclRules": {
     "ogc.geo.topo.features.topo-feature": [
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
     ],
     "ogc.geo.topo.features.topo-feature-collection": [
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
     ]
   },
   "shaclClosures": [],
   "dependsOn": [
-    "ogc.geo.topo.features.topo-feature",
-    "ogc.geo.topo.features.topo-feature-collection",
     "ogc.geo.topo.datatypes.topology",
-    "ogc.geo.features.featureCollection"
+    "ogc.geo.topo.features.topo-feature",
+    "ogc.geo.features.featureCollection",
+    "ogc.geo.topo.features.topo-feature-collection"
   ],
   "ldContext": "https://surroundaustralia.github.io/wa-3d-cadastre-demo/build/annotated/demo/3dcadastre/topo-polyhedron/context.jsonld",
   "schema": {

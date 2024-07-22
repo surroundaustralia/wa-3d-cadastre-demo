@@ -106,7 +106,7 @@
   "name": "Building Blocks - 3D Demo of ICSM 3DCSDM for WA",
   "abstract": "This is an example showing the potential for the WA profile of the ICSM Cadastre Survey Model to be extended to full 3D \n",
   "description": "It extends the topo-feature base to support Polyhedron objects and constrains the WA-Profile to force use of these for parcels of certain types.\n",
-  "modified": "2024-07-22T09:31:06.455798",
+  "modified": "2024-07-22T09:34:31.295401",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"59af8b65c87552d103c26900d115b39f46238b57",
@@ -120,6 +120,7 @@
   "viewerURL": "https://surroundaustralia.github.io/wa-3d-cadastre-demo/",
   "validationReport": "https://surroundaustralia.github.io/wa-3d-cadastre-demo/build/tests/report.html",
   "imports": [
+    "https://opengeospatial.github.io/bblocks/register.json",
     "https://icsm-au.github.io/3d-csdm-profile-wa/build/register.json",
     "https://ogcincubator.github.io/topo-feature/build/register.json"
   ],
@@ -138,7 +139,7 @@
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2023-05-24",
+      "dateOfLastChange": "2024-07-22",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -149,20 +150,20 @@
       ],
       "shaclRules": {
         "ogc.geo.topo.features.topo-feature": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ],
         "ogc.geo.topo.features.topo-feature-collection": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ]
       },
       "shaclClosures": [],
       "dependsOn": [
-        "ogc.geo.topo.features.topo-feature",
-        "ogc.geo.topo.features.topo-feature-collection",
         "ogc.geo.topo.datatypes.topology",
-        "ogc.geo.features.featureCollection"
+        "ogc.geo.topo.features.topo-feature",
+        "ogc.geo.features.featureCollection",
+        "ogc.geo.topo.features.topo-feature-collection"
       ],
       "ldContext": "https://surroundaustralia.github.io/wa-3d-cadastre-demo/build/annotated/demo/3dcadastre/topo-polyhedron/context.jsonld",
       "schema": {

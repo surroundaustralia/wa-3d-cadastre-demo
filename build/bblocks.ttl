@@ -13,14 +13,14 @@
     rdfs:label "Polydron using nested Polygons and Point topology" ;
     dct:abstract "Defines options for describing 3D polyhedrons using features with Point geometry coordinates" ;
     dct:created "2023-11-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://surroundaustralia.github.io/wa-3d-cadastre-demo/build/generateddocs/markdown/demo/3dcadastre/topo-polyhedron/index.md" ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://surroundaustralia.github.io/wa-3d-cadastre-demo/bblock/surround.demo.3dcadastre.topo-polyhedron" ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://surroundaustralia.github.io/wa-3d-cadastre-demo/build/generateddocs/json-full/demo/3dcadastre/topo-polyhedron/index.json" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://surroundaustralia.github.io/wa-3d-cadastre-demo/bblock/surround.demo.3dcadastre.topo-polyhedron" ] ;
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://surroundaustralia.github.io/wa-3d-cadastre-demo/build/generateddocs/markdown/demo/3dcadastre/topo-polyhedron/index.md" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2023-05-24"^^xsd:date ;
+    dct:modified "2024-07-22"^^xsd:date ;
     skos:inScheme <https://surroundaustralia.github.io/wa-3d-cadastre-demo/> ;
     dcat:keyword "3D",
         "geometry",
@@ -48,18 +48,19 @@
     skos:prefLabel "Building Blocks - 3D Demo of ICSM 3DCSDM for WA" ;
     bblocks:hasValidationReport <https://surroundaustralia.github.io/wa-3d-cadastre-demo/build/tests/report.html> ;
     bblocks:imports <https://icsm-au.github.io/3d-csdm-profile-wa/build/register.json>,
-        <https://ogcincubator.github.io/topo-feature/build/register.json> .
+        <https://ogcincubator.github.io/topo-feature/build/register.json>,
+        <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-07-22T09:31:18.572813"^^xsd:dateTime ;
-    prov:startedAtTime "2024-07-22T09:31:18.513693"^^xsd:dateTime ;
+    prov:endedAtTime "2024-07-22T09:34:45.869420"^^xsd:dateTime ;
+    prov:startedAtTime "2024-07-22T09:34:45.813148"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/json" ;
-            dct:hasVersion "git:00a107c360007491bfaa99694b5b240e46d6c61c" ;
-            rdfs:seeAlso <https://surroundaustralia.github.io/wa-3d-cadastre-demo/build/register.json> ],
-        [ a prov:Entity ;
             dct:format "application/yaml" ;
-            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
+            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
+        [ a prov:Entity ;
+            dct:format "application/json" ;
+            dct:hasVersion "git:136f167015fb3c86535ffea3fee15473fe5a35b6" ;
+            rdfs:seeAlso <https://surroundaustralia.github.io/wa-3d-cadastre-demo/build/register.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
