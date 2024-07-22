@@ -1,7 +1,7 @@
 {
   "@context": [
     {
-      "@base": "https://surroundaustralia.github.io/wa-3d-cadastre-demo"
+      "@base": "https://literate-couscous-j7e78pr.pages.github.io"
     },
     {
       "bblocks": "https://www.opengis.net/def/bblocks/",
@@ -106,19 +106,19 @@
   "name": "Building Blocks - 3D Demo of ICSM 3DCSDM for WA",
   "abstract": "This is an example showing the potential for the WA profile of the ICSM Cadastre Survey Model to be extended to full 3D \n",
   "description": "It extends the topo-feature base to support Polyhedron objects and constrains the WA-Profile to force use of these for parcels of certain types.\n",
-  "modified": "2024-07-22T09:34:31.295401",
+  "modified": "2024-07-22T11:28:34.965095",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"59af8b65c87552d103c26900d115b39f46238b57",
-      "shortCommitId": "\"59af8b",
-      "date": "2024-07-08T08:08:11+00:00\""
+      "commitId": "\"cfd033ddeff18a73d341ee8d95750a54234195e9",
+      "shortCommitId": "\"cfd033",
+      "date": "2024-07-22T11:25:07+00:00\""
     }
   },
   "gitRepository": "https://github.com/surroundaustralia/wa-3d-cadastre-demo",
   "gitHubRepository": "https://github.com/surroundaustralia/wa-3d-cadastre-demo/blob/master/",
-  "baseURL": "https://surroundaustralia.github.io/wa-3d-cadastre-demo/",
-  "viewerURL": "https://surroundaustralia.github.io/wa-3d-cadastre-demo/",
-  "validationReport": "https://surroundaustralia.github.io/wa-3d-cadastre-demo/build/tests/report.html",
+  "baseURL": "https://literate-couscous-j7e78pr.pages.github.io/",
+  "viewerURL": "https://literate-couscous-j7e78pr.pages.github.io/",
+  "validationReport": "https://literate-couscous-j7e78pr.pages.github.io/build/tests/report.html",
   "imports": [
     "https://opengeospatial.github.io/bblocks/register.json",
     "https://icsm-au.github.io/3d-csdm-profile-wa/build/register.json",
@@ -139,7 +139,7 @@
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2024-07-22",
+      "dateOfLastChange": "2023-05-24",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -150,43 +150,43 @@
       ],
       "shaclRules": {
         "ogc.geo.topo.features.topo-feature": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
         ],
         "ogc.geo.topo.features.topo-feature-collection": [
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
         ]
       },
       "shaclClosures": [],
       "dependsOn": [
-        "ogc.geo.topo.datatypes.topology",
         "ogc.geo.topo.features.topo-feature",
-        "ogc.geo.features.featureCollection",
-        "ogc.geo.topo.features.topo-feature-collection"
+        "ogc.geo.topo.datatypes.topology",
+        "ogc.geo.topo.features.topo-feature-collection",
+        "ogc.geo.features.featureCollection"
       ],
-      "ldContext": "https://surroundaustralia.github.io/wa-3d-cadastre-demo/build/annotated/demo/3dcadastre/topo-polyhedron/context.jsonld",
+      "ldContext": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/topo-polyhedron/context.jsonld",
       "schema": {
-        "application/yaml": "https://surroundaustralia.github.io/wa-3d-cadastre-demo/build/annotated/demo/3dcadastre/topo-polyhedron/schema.yaml",
-        "application/json": "https://surroundaustralia.github.io/wa-3d-cadastre-demo/build/annotated/demo/3dcadastre/topo-polyhedron/schema.json"
+        "application/yaml": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/topo-polyhedron/schema.yaml",
+        "application/json": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/topo-polyhedron/schema.json"
       },
-      "sourceSchema": "https://surroundaustralia.github.io/wa-3d-cadastre-demo/_sources/topo-polyhedron/schema.json",
-      "sourceLdContext": "https://surroundaustralia.github.io/wa-3d-cadastre-demo/_sources/topo-polyhedron/context.jsonld",
-      "sourceFiles": "https://surroundaustralia.github.io/wa-3d-cadastre-demo/_sources/topo-polyhedron/",
+      "sourceSchema": "https://literate-couscous-j7e78pr.pages.github.io/_sources/topo-polyhedron/schema.json",
+      "sourceLdContext": "https://literate-couscous-j7e78pr.pages.github.io/_sources/topo-polyhedron/context.jsonld",
+      "sourceFiles": "https://literate-couscous-j7e78pr.pages.github.io/_sources/topo-polyhedron/",
       "validationPassed": true,
       "testOutputs": "https://github.com/surroundaustralia/wa-3d-cadastre-demo/blob/master/build/tests/demo/3dcadastre/topo-polyhedron/",
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://surroundaustralia.github.io/wa-3d-cadastre-demo/build/generateddocs/json-full/demo/3dcadastre/topo-polyhedron/index.json"
+          "url": "https://literate-couscous-j7e78pr.pages.github.io/build/generateddocs/json-full/demo/3dcadastre/topo-polyhedron/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://surroundaustralia.github.io/wa-3d-cadastre-demo/build/generateddocs/markdown/demo/3dcadastre/topo-polyhedron/index.md"
+          "url": "https://literate-couscous-j7e78pr.pages.github.io/build/generateddocs/markdown/demo/3dcadastre/topo-polyhedron/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://surroundaustralia.github.io/wa-3d-cadastre-demo/bblock/surround.demo.3dcadastre.topo-polyhedron"
+          "url": "https://literate-couscous-j7e78pr.pages.github.io/bblock/surround.demo.3dcadastre.topo-polyhedron"
         }
       },
       "@type": [
