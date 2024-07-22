@@ -426,5 +426,5 @@
       }
     }
   ],
-  "@context": "https://raw.githubusercontent.com/surroundaustralia/wa-3d-cadastre-demo/master/build/annotated/demo/3dcadastre/topo-polyhedron/context.jsonld"
+  "@context": "https://surroundaustralia.github.io/wa-3d-cadastre-demo/build/annotated/demo/3dcadastre/topo-polyhedron/context.jsonld"
 }

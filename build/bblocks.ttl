@@ -7,38 +7,38 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://raw.githubusercontent.com/surroundaustralia/wa-3d-cadastre-demo/surround.demo.3dcadastre.topo-polyhedron> a skos:Concept,
+<https://surroundaustralia.github.io/surround.demo.3dcadastre.topo-polyhedron> a skos:Concept,
         dcat:Dataset,
         bblocks:Schema ;
     rdfs:label "Polydron using nested Polygons and Point topology" ;
     dct:abstract "Defines options for describing 3D polyhedrons using features with Point geometry coordinates" ;
     dct:created "2023-11-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/surroundaustralia/wa-3d-cadastre-demo/master/build/generateddocs/json-full/demo/3dcadastre/topo-polyhedron/index.json" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/surroundaustralia/wa-3d-cadastre-demo/master/build/generateddocs/markdown/demo/3dcadastre/topo-polyhedron/index.md" ],
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://surroundaustralia.github.io/wa-3d-cadastre-demo/build/generateddocs/markdown/demo/3dcadastre/topo-polyhedron/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://surroundaustralia.github.io/wa-3d-cadastre-demo/build/generateddocs/json-full/demo/3dcadastre/topo-polyhedron/index.json" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/surroundaustralia/wa-3d-cadastre-demo/master/bblock/surround.demo.3dcadastre.topo-polyhedron" ] ;
+            rdfs:isDefinedBy "https://surroundaustralia.github.io/wa-3d-cadastre-demo/bblock/surround.demo.3dcadastre.topo-polyhedron" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-07-22"^^xsd:date ;
-    skos:inScheme <https://raw.githubusercontent.com/surroundaustralia/wa-3d-cadastre-demo/master/> ;
+    dct:modified "2023-05-24"^^xsd:date ;
+    skos:inScheme <https://surroundaustralia.github.io/wa-3d-cadastre-demo/> ;
     dcat:keyword "3D",
         "geometry",
         "topology" ;
-    bblocks:dependsOn <https://raw.githubusercontent.com/surroundaustralia/wa-3d-cadastre-demo/ogc.geo.features.featureCollection>,
-        <https://raw.githubusercontent.com/surroundaustralia/wa-3d-cadastre-demo/ogc.geo.topo.datatypes.topology>,
-        <https://raw.githubusercontent.com/surroundaustralia/wa-3d-cadastre-demo/ogc.geo.topo.features.topo-feature>,
-        <https://raw.githubusercontent.com/surroundaustralia/wa-3d-cadastre-demo/ogc.geo.topo.features.topo-feature-collection> ;
-    bblocks:hasJsonLdContext <https://raw.githubusercontent.com/surroundaustralia/wa-3d-cadastre-demo/master/build/annotated/demo/3dcadastre/topo-polyhedron/context.jsonld> ;
-    bblocks:hasSchema <https://raw.githubusercontent.com/surroundaustralia/wa-3d-cadastre-demo/master/build/annotated/demo/3dcadastre/topo-polyhedron/schema.json>,
-        <https://raw.githubusercontent.com/surroundaustralia/wa-3d-cadastre-demo/master/build/annotated/demo/3dcadastre/topo-polyhedron/schema.yaml> ;
+    bblocks:dependsOn <https://surroundaustralia.github.io/ogc.geo.features.featureCollection>,
+        <https://surroundaustralia.github.io/ogc.geo.topo.datatypes.topology>,
+        <https://surroundaustralia.github.io/ogc.geo.topo.features.topo-feature>,
+        <https://surroundaustralia.github.io/ogc.geo.topo.features.topo-feature-collection> ;
+    bblocks:hasJsonLdContext <https://surroundaustralia.github.io/wa-3d-cadastre-demo/build/annotated/demo/3dcadastre/topo-polyhedron/context.jsonld> ;
+    bblocks:hasSchema <https://surroundaustralia.github.io/wa-3d-cadastre-demo/build/annotated/demo/3dcadastre/topo-polyhedron/schema.json>,
+        <https://surroundaustralia.github.io/wa-3d-cadastre-demo/build/annotated/demo/3dcadastre/topo-polyhedron/schema.yaml> ;
     bblocks:hasShaclRule <https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl>,
         <https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl> ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/surroundaustralia/wa-3d-cadastre-demo/master/_sources/topo-polyhedron/context.jsonld> ;
+    bblocks:hasSourceJsonLdContext <https://surroundaustralia.github.io/wa-3d-cadastre-demo/_sources/topo-polyhedron/context.jsonld> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
-<https://raw.githubusercontent.com/surroundaustralia/wa-3d-cadastre-demo/master/> a skos:ConceptScheme,
+<https://surroundaustralia.github.io/wa-3d-cadastre-demo/> a skos:ConceptScheme,
         dcat:Catalog ;
     rdfs:label "Building Blocks - 3D Demo of ICSM 3DCSDM for WA" ;
     dct:abstract """This is an example showing the potential for the WA profile of the ICSM Cadastre Survey Model to be extended to full 3D 
@@ -46,17 +46,17 @@
     dct:description """It extends the topo-feature base to support Polyhedron objects and constrains the WA-Profile to force use of these for parcels of certain types.
 """ ;
     skos:prefLabel "Building Blocks - 3D Demo of ICSM 3DCSDM for WA" ;
-    bblocks:hasValidationReport <https://raw.githubusercontent.com/surroundaustralia/wa-3d-cadastre-demo/master/build/tests/report.html> ;
+    bblocks:hasValidationReport <https://surroundaustralia.github.io/wa-3d-cadastre-demo/build/tests/report.html> ;
     bblocks:imports <https://icsm-au.github.io/3d-csdm-profile-wa/build/register.json>,
         <https://ogcincubator.github.io/topo-feature/build/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-07-22T09:15:28.612250"^^xsd:dateTime ;
-    prov:startedAtTime "2024-07-22T09:15:28.552909"^^xsd:dateTime ;
+    prov:endedAtTime "2024-07-22T09:31:18.572813"^^xsd:dateTime ;
+    prov:startedAtTime "2024-07-22T09:31:18.513693"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:16055a0c779c06338daf2b6746bc3499efe46b89" ;
-            rdfs:seeAlso <https://raw.githubusercontent.com/surroundaustralia/wa-3d-cadastre-demo/master/build/register.json> ],
+            dct:hasVersion "git:00a107c360007491bfaa99694b5b240e46d6c61c" ;
+            rdfs:seeAlso <https://surroundaustralia.github.io/wa-3d-cadastre-demo/build/register.json> ],
         [ a prov:Entity ;
             dct:format "application/yaml" ;
             rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
