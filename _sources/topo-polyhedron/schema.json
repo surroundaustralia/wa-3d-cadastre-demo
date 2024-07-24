@@ -39,21 +39,16 @@
       ]
     },
     "ContainedFeatureCollection": {
-      "anyOf": [
-        {
-          "$ref": "bblocks://ogc.geo.topo.features.topo-feature-collection"
-        },
-        {
-          "$ref": "bblocks://ogc.geo.features.featureCollection"
-        }
-      ]
+      "$ref": "bblocks://ogc.geo.topo.features.topo-feature-collection"
     }
   },
-  "oneOf": [ {
-    "$ref": "#/$defs/PolyhedralFeature"
-  },
-  {
-    "$ref": "#/$defs/ContainedFeatureCollection"
-  } ]
+  "oneOf": [
+    {
+      "$ref": "#/$defs/PolyhedralFeature"
+    },
+    {
+      "$ref": "#/$defs/ContainedFeatureCollection"
+    }
+  ]
 }
 

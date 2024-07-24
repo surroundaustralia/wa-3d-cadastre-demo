@@ -1,0 +1,19 @@
+- title: WA 3D parcel example
+  content: |-
+     it contains:
+    
+      - Horizontal and Vertical CRS
+      - Four 2D Boundary Marks for a conventional 2D parcel (its a parcel from the WA extended example)
+      - 22 3D Boundary Marks for the 3D Surface Parcel and the two Duplex polyhedra
+      - Four Adopted vectorObservations for the 2D parcel and 30 calculated vectorObservations for the 3D Surface Parcel and the two Duplex polyhedra
+      - 50 observedVectors defining the geometries for the 2D LineStrins (2D parcel), the 3D surface, and the duplex polyhedra
+      - 21 faces defining the 3D surface and the duplex polyhedra
+      - 3 primary parcels - a 2D parcel and two duplex polyhedra
+      - A surface TIN
+      - A terrain intersection curve
+
+  base-output-filename: 3dparcel-wa-1
+  snippets:
+    - language: json
+      ref: examples/waTestData.json
+      base-uri: https://www.wa-example.com/features/

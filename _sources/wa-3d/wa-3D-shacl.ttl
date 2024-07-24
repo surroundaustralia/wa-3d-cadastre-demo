@@ -1,0 +1,30 @@
+@prefix wap3d:             <https://linked.data.gov.au/def/csdm/waprofilerules/3dstrata/> .
+@prefix rdf:               <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:              <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh:                <http://www.w3.org/ns/shacl#> .
+@prefix xsd:               <http://www.w3.org/2001/XMLSchema#> .
+@prefix geojson:           <https://purl.org/geojson/vocab#> .
+@prefix csdm:              <https://linked.data.gov.au/def/csdm/> .
+@prefix dct:               <http://purl.org/dc/terms/> .
+@prefix commonpatterns:    <https://linked.data.gov.au/def/csdm/commonpatterns/> .
+@prefix surv:              <https://linked.data.gov.au/def/csdm/surveyfeatures/> .
+@prefix parcel:            <https://linked.data.gov.au/def/csdm/parcels/> .
+@prefix wa-parcel-purpose: <https://linked.data.gov.au/def/csdm/wa-parcel-purpose/> .
+
+wap3d:testParcel3D
+    a                   sh:NodeShape ;
+    sh:targetSubjectsOf parcel:purpose ;
+    sh:message          "Strata units must have 3D volumes." ;
+    #               FILTER (?value IN (wa-parcel-purpose:strata-lot wa-parcel-purpose:vacant-strata-lot ))
+    sh:or               ( [ sh:property [ sh:path parcel:purpose ;
+                                          sh:in   ( wa-parcel-purpose:strata-lot
+                                                    wa-parcel-purpose:vacant-strata-lot ) ; ] ;
+                            sh:property [ sh:path ( geojson:topology rdf:type ) ;
+                                          sh:in   ( geojson:Polyhedron geojson:Prism ) ; ]
+                          ]
+                          [  sh:property
+                                        [ sh:path parcel:purpose ;
+                                          sh:not [ sh:in   ( wa-parcel-purpose:strata-lot
+                                                    wa-parcel-purpose:vacant-strata-lot ) ] ]
+                          ] ) ;
+.

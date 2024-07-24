@@ -1,5 +1,5 @@
 {
-  "name": "Polydron using nested Polygons and Point topology",
+  "name": "3D (Polyhedron) using nested Polygons and Point topology",
   "abstract": "Defines options for describing 3D polyhedrons using features with Point geometry coordinates",
   "status": "under-development",
   "dateTimeAddition": "2023-11-01T00:00:00Z",
