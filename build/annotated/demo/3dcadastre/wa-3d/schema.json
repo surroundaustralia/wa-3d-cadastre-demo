@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "WA profile of Cadastral Survey Data Model",
+  "allOf": [
+    {
+      "$ref": "https://icsm-au.github.io/3d-csdm-profile-wa/build/annotated/profiles/wa/schema.json"
+    }
+  ]
+}

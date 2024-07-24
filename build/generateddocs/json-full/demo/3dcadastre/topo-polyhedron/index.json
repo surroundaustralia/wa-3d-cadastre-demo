@@ -2,14 +2,14 @@
 
 {
   "itemIdentifier": "surround.demo.3dcadastre.topo-polyhedron",
-  "name": "Polydron using nested Polygons and Point topology",
+  "name": "3D (Polyhedron) using nested Polygons and Point topology",
   "abstract": "Defines options for describing 3D polyhedrons using features with Point geometry coordinates",
   "status": "under-development",
   "dateTimeAddition": "2023-11-01T00:00:00Z",
   "itemClass": "schema",
   "register": "ogcincubator",
   "version": "0.1",
-  "dateOfLastChange": "2023-05-24",
+  "dateOfLastChange": "2024-07-24",
   "sources": [],
   "maturity": "development",
   "scope": "unstable",
@@ -30,7 +30,6 @@
   },
   "shaclClosures": [],
   "dependsOn": [
-    "ogc.geo.features.featureCollection",
     "ogc.geo.topo.features.topo-feature",
     "ogc.geo.topo.features.topo-feature-collection",
     "ogc.geo.topo.datatypes.topology"
@@ -43,7 +42,7 @@
   "sourceSchema": "https://literate-couscous-j7e78pr.pages.github.io/_sources/topo-polyhedron/schema.json",
   "sourceLdContext": "https://literate-couscous-j7e78pr.pages.github.io/_sources/topo-polyhedron/context.jsonld",
   "sourceFiles": "https://literate-couscous-j7e78pr.pages.github.io/_sources/topo-polyhedron/",
-  "validationPassed": true,
+  "validationPassed": false,
   "testOutputs": "https://github.com/surroundaustralia/wa-3d-cadastre-demo/blob/master/build/tests/demo/3dcadastre/topo-polyhedron/",
   "description": "## Topology defining Polyhedrons\n\nA feature type using a topology property to reference points defining Polyhedrons as per the FG-JSON extended geometry model\n\n\n\n",
   "examples": [
@@ -71,7 +70,7 @@
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Arc Feature with geometry by reference\n$defs:\n  PolyhedralFeature:\n    allOf:\n    - $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml\n    - properties:\n        topology:\n          allOf:\n          - $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml\n          - oneOf:\n            - properties:\n                type:\n                  type: string\n                  const: Polyhedron\n                references:\n                  type: array\n      required:\n      - topology\n  ContainedFeatureCollection:\n    anyOf:\n    - $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml\n    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema.yaml\noneOf:\n- $ref: '#/$defs/PolyhedralFeature'\n- $ref: '#/$defs/ContainedFeatureCollection'\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Arc Feature with geometry by reference\n$defs:\n  PolyhedralFeature:\n    allOf:\n    - $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature/schema.yaml\n    - properties:\n        topology:\n          allOf:\n          - $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/datatypes/topology/schema.yaml\n          - oneOf:\n            - properties:\n                type:\n                  type: string\n                  const: Polyhedron\n                references:\n                  type: array\n      required:\n      - topology\n  ContainedFeatureCollection:\n    $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml\noneOf:\n- $ref: '#/$defs/PolyhedralFeature'\n- $ref: '#/$defs/ContainedFeatureCollection'\n",
   "gitRepository": "https://github.com/surroundaustralia/wa-3d-cadastre-demo",
   "gitPath": "_sources/topo-polyhedron"
 }

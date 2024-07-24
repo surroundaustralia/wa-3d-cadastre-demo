@@ -1,5 +1,5 @@
 
-# Polydron using nested Polygons and Point topology (Schema)
+# 3D (Polyhedron) using nested Polygons and Point topology (Schema)
 
 `surround.demo.3dcadastre.topo-polyhedron` *v0.1*
 
@@ -985,9 +985,7 @@ $defs:
       required:
       - topology
   ContainedFeatureCollection:
-    anyOf:
-    - $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema.yaml
+    $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml
 oneOf:
 - $ref: '#/$defs/PolyhedralFeature'
 - $ref: '#/$defs/ContainedFeatureCollection'

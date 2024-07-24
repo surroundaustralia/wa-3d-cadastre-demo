@@ -1,9 +1,9 @@
 {
-  "title": "Validation report for surround.demo.3dcadastre.topo-polyhedron - Polydron using nested Polygons and Point topology",
-  "bblockName": "Polydron using nested Polygons and Point topology",
+  "title": "Validation report for surround.demo.3dcadastre.topo-polyhedron - 3D (Polyhedron) using nested Polygons and Point topology",
+  "bblockName": "3D (Polyhedron) using nested Polygons and Point topology",
   "bblockId": "surround.demo.3dcadastre.topo-polyhedron",
-  "generated": "2024-07-22T11:38:54.107363+00:00",
-  "result": true,
+  "generated": "2024-07-24T07:18:28.006765+00:00",
+  "result": false,
   "items": [
     {
       "source": {
@@ -15,7 +15,7 @@
         "snippetIndex": 1,
         "language": "json"
       },
-      "result": true,
+      "result": false,
       "sections": [
         {
           "name": "GENERAL",
@@ -57,9 +57,11 @@
           "entries": [
             {
               "op": "validation",
-              "result": true,
-              "isError": false,
-              "message": "Validation passed"
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "{'type': 'Polyhedron', 'references': [[[['P479816.67_5705861.672_100', 'P479822.187_5705866.783_100', 'P479829.666_5705858.785_100', 'P479824.155_5705853.684_100', 'P479816.67_5705861.672_100']], [['P479816.67_5705861.672_110', 'P479824.155_5705853.684_110', 'P479829.666_5705858.785_120', 'P479822.187_5705866.783_120', 'P479816.67_5705861.672_110']], [['P479816.67_5705861.672_110', 'P479816.67_5705861.672_100', 'P479824.155_5705853.684_100', 'P479824.155_5705853.684_110', 'P479816.67_5705861.672_110']], [['P479824.155_5705853.684_110', 'P479824.155_5705853.684_100', 'P479829.666_5705858.785_100', 'P479829.666_5705858.785_120', 'P479824.155_5705853.684_110']], [['P479829.666_5705858.785_120', 'P479829.666_5705858.785_100', 'P479822.187_5705866.783_100', 'P479822.187_5705866.783_120', 'P479829.666_5705858.785_120']], [['P479822.187_5705866.783_120', 'P479822.187_5705866.783_100', 'P479816.67_5705861.672_100', 'P479816.67_5705861.672_110', 'P479822.187_5705866.783_120']]]]} is not valid under any of the given schemas",
+              "isError": true,
+              "message": "ValidationError: {'type': 'Polyhedron', 'references': [[[['P479816.67_5705861.672_100', 'P479822.187_5705866.783_100', 'P479829.666_5705858.785_100', 'P479824.155_5705853.684_100', 'P479816.67_5705861.672_100']], [['P479816.67_5705861.672_110', 'P479824.155_5705853.684_110', 'P479829.666_5705858.785_120', 'P479822.187_5705866.783_120', 'P479816.67_5705861.672_110']], [['P479816.67_5705861.672_110', 'P479816.67_5705861.672_100', 'P479824.155_5705853.684_100', 'P479824.155_5705853.684_110', 'P479816.67_5705861.672_110']], [['P479824.155_5705853.684_110', 'P479824.155_5705853.684_100', 'P479829.666_5705858.785_100', 'P479829.666_5705858.785_120', 'P479824.155_5705853.684_110']], [['P479829.666_5705858.785_120', 'P479829.666_5705858.785_100', 'P479822.187_5705866.783_100', 'P479822.187_5705866.783_120', 'P479829.666_5705858.785_120']], [['P479822.187_5705866.783_120', 'P479822.187_5705866.783_100', 'P479816.67_5705861.672_100', 'P479816.67_5705861.672_110', 'P479822.187_5705866.783_120']]]]} is not valid under any of the given schemas\n\nFailed validating 'oneOf' in schema[0]['allOf'][1]['properties']['topology']:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'description': 'feature with geometry by reference',\n     'oneOf': [{'properties': {'references': {'items': {'type': 'string'},\n                                              'type': 'array',\n                                              'x-jsonld-container': '@list',\n                                              'x-jsonld-id': 'https://purl.org/geojson/vocab#relatedFeatures',\n                                              'x-jsonld-type': '@id'},\n                               'type': {'not': {'enum': ['Polygon',\n                                                         'MultiLineString',\n                                                         'MultiPolygon']},\n                                        'type': 'string',\n                                        'x-jsonld-id': '@type'}}},\n               {'properties': {'references': {'items': {'items': {'items': {'type': 'string'},\n                                                                  'type': 'array'},\n                                                        'type': 'array'},\n                                              'type': 'array',\n                                              'x-jsonld-container': '@list',\n                                              'x-jsonld-id': 'https://purl.org/geojson/vocab#relatedFeatures',\n                                              'x-jsonld-type': '@id'},\n                               'type': {'enum': ['MultiPolygon'],\n                                        'type': 'string',\n                                        'x-jsonld-id': '@type'}}},\n               {'properties': {'references': {'items': {'items': {'type': 'string'},\n                                                        'type': 'array'},\n                                              'type': 'array',\n                                              'x-jsonld-container': '@list',\n                                              'x-jsonld-id': 'https://purl.org/geojson/vocab#relatedFeatures',\n                                              'x-jsonld-type': '@id'},\n                               'type': {'enum': ['Polygon',\n                                                 'MultiLineString'],\n                                        'type': 'string',\n                                        'x-jsonld-id': '@type'}}}],\n     'required': ['references', 'type'],\n     'x-jsonld-extra-terms': {'Arc': 'https://purl.org/geojson/vocab#Arc',\n                              'ArcByChord': 'https://purl.org/geojson/vocab#ArcByChord',\n                              'ArcWithCenter': 'https://purl.org/geojson/vocab#ArcWithCenter',\n                              'CircleByCenter': 'https://purl.org/geojson/vocab#CircleByCenter',\n                              'CubicSpline': 'https://purl.org/geojson/vocab#CubicSpline',\n                              'LineString': 'https://purl.org/geojson/vocab#LineString',\n                              'MultiLineString': 'https://purl.org/geojson/vocab#MultiLineString',\n                              'MultiPolygon': 'https://purl.org/geojson/vocab#MultiPolygon',\n                              'Polygon': 'https://purl.org/geojson/vocab#Polygon',\n                              'arcLength': 'https://purl.org/geojson/vocab#arcLength',\n                              'endTangentVector': 'https://purl.org/geojson/vocab#endTangentVector',\n                              'radius': 'https://purl.org/geojson/vocab#radius',\n                              'startTangentVector': 'https://purl.org/geojson/vocab#startTangentVector'},\n     'x-jsonld-prefixes': {'csdm': 'https://linked.data.gov.au/def/csdm/',\n                           'dct': 'http://purl.org/dc/terms/',\n                           'geojson': 'https://purl.org/geojson/vocab#'}}\n\nOn instance['topology']:\n    {'references': [[[['P479816.67_5705861.672_100',\n                       'P479822.187_5705866.783_100',\n                       'P479829.666_5705858.785_100',\n                       'P479824.155_5705853.684_100',\n                       'P479816.67_5705861.672_100']],\n                     [['P479816.67_5705861.672_110',\n                       'P479824.155_5705853.684_110',\n                       'P479829.666_5705858.785_120',\n                       'P479822.187_5705866.783_120',\n                       'P479816.67_5705861.672_110']],\n                     [['P479816.67_5705861.672_110',\n                       'P479816.67_5705861.672_100',\n                       'P479824.155_5705853.684_100',\n                       'P479824.155_5705853.684_110',\n                       'P479816.67_5705861.672_110']],\n                     [['P479824.155_5705853.684_110',\n                       'P479824.155_5705853.684_100',\n                       'P479829.666_5705858.785_100',\n                       'P479829.666_5705858.785_120',\n                       'P479824.155_5705853.684_110']],\n                     [['P479829.666_5705858.785_120',\n                       'P479829.666_5705858.785_100',\n                       'P479822.187_5705866.783_100',\n                       'P479822.187_5705866.783_120',\n                       'P479829.666_5705858.785_120']],\n                     [['P479822.187_5705866.783_120',\n                       'P479822.187_5705866.783_100',\n                       'P479816.67_5705861.672_100',\n                       'P479816.67_5705861.672_110',\n                       'P479822.187_5705866.783_120']]]],\n     'type': 'Polyhedron'}"
             }
           ]
         },
@@ -77,45 +79,6 @@
           "name": "SHACL",
           "title": "SHACL",
           "entries": [
-            {
-              "op": "shacl-report",
-              "shaclFile": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
-              "focusNodes": {
-                "_:n752032d412f147d8817ac75760932a1eb1": {
-                  "nodes": [
-                    "<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry",
-                    "<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry",
-                    "<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry",
-                    "<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry",
-                    "<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry",
-                    "<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry",
-                    "<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry",
-                    "<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry"
-                  ]
-                },
-                "_:n752032d412f147d8817ac75760932a1eb3": {
-                  "nodes": [
-                    "<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry",
-                    "<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry",
-                    "<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry",
-                    "<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry",
-                    "<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry",
-                    "<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:geometry",
-                    "<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry",
-                    "<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry",
-                    "<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry"
-                  ]
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n752032d412f147d8817ac75760932a1eb1: <http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry\n - Shape _:n752032d412f147d8817ac75760932a1eb3: <http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry,<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry\n"
-            },
             {
               "op": "shacl-report",
               "shaclFile": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
@@ -137,6 +100,45 @@
               },
               "isError": false,
               "message": "Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/DENW19AL0000giv5BL>/geojson:topology\n - Shape topo:testTopoLinesReferencePoints: *none*\n"
+            },
+            {
+              "op": "shacl-report",
+              "shaclFile": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+              "focusNodes": {
+                "_:ne08a529b379c4e4ebc6a001d3509a102b1": {
+                  "nodes": [
+                    "<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry",
+                    "<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry",
+                    "<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry",
+                    "<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry",
+                    "<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry",
+                    "<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry",
+                    "<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry",
+                    "<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry"
+                  ]
+                },
+                "_:ne08a529b379c4e4ebc6a001d3509a102b3": {
+                  "nodes": [
+                    "<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry",
+                    "<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry",
+                    "<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry",
+                    "<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry",
+                    "<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry",
+                    "<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry",
+                    "<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry",
+                    "<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:geometry",
+                    "<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry"
+                  ]
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:ne08a529b379c4e4ebc6a001d3509a102b1: <http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry\n - Shape _:ne08a529b379c4e4ebc6a001d3509a102b3: <http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry,<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry\n"
             }
           ]
         },
@@ -151,7 +153,7 @@
   "globalErrors": {},
   "counts": {
     "total": 1,
-    "passed": 1,
-    "failed": 0
+    "passed": 0,
+    "failed": 1
   }
 }

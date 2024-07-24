@@ -132,34 +132,6 @@ x-defs:
           - $ref: https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/topo-polyhedron/schema-oas3.0.yaml#/x-defs/ogc.geo.topo.features.topo-feature-collection/$defs/PointOptions
     x-schema-source: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml
     x-schema-version: https://json-schema.org/draft/2020-12/schema
-  ogc.geo.features.featureCollection:
-    allOf:
-    - $ref: https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/topo-polyhedron/schema-oas3.0.yaml#/x-defs/FeatureCollection
-    - type: object
-      properties:
-        links:
-          type: array
-          items:
-            $ref: https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/topo-polyhedron/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.json-link
-          x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#seeAlso
-        timeStamp:
-          type: string
-          format: date-time
-        numberMatched:
-          type: integer
-          minimum: 0
-        numberReturned:
-          type: integer
-          minimum: 0
-        features:
-          type: array
-          items:
-            $ref: https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/topo-polyhedron/schema-oas3.0.yaml#/x-defs/ogc.geo.features.feature
-    x-jsonld-extra-terms:
-      properties: '@nest'
-    x-jsonld-prefixes:
-      rdfs: http://www.w3.org/2000/01/rdf-schema#
-    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema.yaml
   ogc.geo.json-fg.feature:
     title: a JSON-FG Feature
     description: This JSON Schema is part of JSON-FG version 0.1.1
@@ -1139,43 +1111,6 @@ x-defs:
     x-schema-source: https://beta.schemas.opengis.net/json-fg/feature.json
     x-schema-id: https://beta.schemas.opengis.net/json-fg/feature.json
     x-schema-version: https://json-schema.org/draft/2020-12/schema
-  ogc.ogc-utils.json-link:
-    description: JSON Link
-    type: object
-    required:
-    - href
-    - rel
-    properties:
-      href:
-        type: string
-        format: uri-reference
-        x-jsonld-type: '@id'
-        x-jsonld-id: http://www.w3.org/ns/oa#hasTarget
-      rel:
-        type: string
-        x-jsonld-id: http://www.iana.org/assignments/relation
-        x-jsonld-type: '@id'
-        x-jsonld-base: http://www.iana.org/assignments/relation/
-      anchor:
-        type: string
-      type:
-        type: string
-        x-jsonld-id: http://purl.org/dc/terms/type
-      hreflang:
-        type: string
-        x-jsonld-id: http://purl.org/dc/terms/language
-      title:
-        type: string
-        x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label
-      length:
-        type: integer
-        x-jsonld-id: http://purl.org/dc/terms/extent
-    x-jsonld-prefixes:
-      oa: http://www.w3.org/ns/oa#
-      rdfs: http://www.w3.org/2000/01/rdf-schema#
-      dct: http://purl.org/dc/terms/
-    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
-    x-schema-version: https://json-schema.org/draft/2020-12/schema
   ogc.geo.features.feature:
     allOf:
     - $ref: https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/topo-polyhedron/schema-oas3.0.yaml#/x-defs/ogc.geo.common.data_types.geojson
@@ -1238,6 +1173,43 @@ x-defs:
         type: string
     x-schema-source: https://beta.schemas.opengis.net/json-fg/link.json
     x-schema-id: https://beta.schemas.opengis.net/json-fg/link.json
+    x-schema-version: https://json-schema.org/draft/2020-12/schema
+  ogc.ogc-utils.json-link:
+    description: JSON Link
+    type: object
+    required:
+    - href
+    - rel
+    properties:
+      href:
+        type: string
+        format: uri-reference
+        x-jsonld-type: '@id'
+        x-jsonld-id: http://www.w3.org/ns/oa#hasTarget
+      rel:
+        type: string
+        x-jsonld-id: http://www.iana.org/assignments/relation
+        x-jsonld-type: '@id'
+        x-jsonld-base: http://www.iana.org/assignments/relation/
+      anchor:
+        type: string
+      type:
+        type: string
+        x-jsonld-id: http://purl.org/dc/terms/type
+      hreflang:
+        type: string
+        x-jsonld-id: http://purl.org/dc/terms/language
+      title:
+        type: string
+        x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label
+      length:
+        type: integer
+        x-jsonld-id: http://purl.org/dc/terms/extent
+    x-jsonld-prefixes:
+      oa: http://www.w3.org/ns/oa#
+      rdfs: http://www.w3.org/2000/01/rdf-schema#
+      dct: http://purl.org/dc/terms/
+    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
     x-schema-version: https://json-schema.org/draft/2020-12/schema
   ogc.geo.json-fg.time:
     title: the time member
@@ -1479,6 +1451,34 @@ x-defs:
       dct: http://purl.org/dc/terms/
       owlTime: http://www.w3.org/2006/time#
     x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.yaml
+  ogc.geo.features.featureCollection:
+    allOf:
+    - $ref: https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/topo-polyhedron/schema-oas3.0.yaml#/x-defs/FeatureCollection
+    - type: object
+      properties:
+        links:
+          type: array
+          items:
+            $ref: https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/topo-polyhedron/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.json-link
+          x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#seeAlso
+        timeStamp:
+          type: string
+          format: date-time
+        numberMatched:
+          type: integer
+          minimum: 0
+        numberReturned:
+          type: integer
+          minimum: 0
+        features:
+          type: array
+          items:
+            $ref: https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/topo-polyhedron/schema-oas3.0.yaml#/x-defs/ogc.geo.features.feature
+    x-jsonld-extra-terms:
+      properties: '@nest'
+    x-jsonld-prefixes:
+      rdfs: http://www.w3.org/2000/01/rdf-schema#
+    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema.yaml
   ogc.geo.json-fg.time_1:
     title: the time member
     description: This JSON Schema is part of JSON-FG version 0.2.2
@@ -1855,9 +1855,7 @@ $defs:
       required:
       - topology
   ContainedFeatureCollection:
-    anyOf:
-    - $ref: https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/topo-polyhedron/schema-oas3.0.yaml#/x-defs/ogc.geo.topo.features.topo-feature-collection
-    - $ref: https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/topo-polyhedron/schema-oas3.0.yaml#/x-defs/ogc.geo.features.featureCollection
+    $ref: https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/topo-polyhedron/schema-oas3.0.yaml#/x-defs/ogc.geo.topo.features.topo-feature-collection
 oneOf:
 - $ref: https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/topo-polyhedron/schema-oas3.0.yaml#/$defs/PolyhedralFeature
 - $ref: https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/topo-polyhedron/schema-oas3.0.yaml#/$defs/ContainedFeatureCollection

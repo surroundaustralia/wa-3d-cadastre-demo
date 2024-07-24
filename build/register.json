@@ -2,12 +2,12 @@
   "name": "3D Demo of ICSM 3DCSDM for WA",
   "abstract": "This is an example showing the potential for the WA profile of the ICSM Cadastre Survey Model to be extended to full 3D \n",
   "description": "It extends the topo-feature base to support Polyhedron objects and constrains the WA-Profile to force use of these for parcels of certain types.\n",
-  "modified": "2024-07-22T11:38:45.792651",
+  "modified": "2024-07-24T07:12:52.523327",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"cfd033ddeff18a73d341ee8d95750a54234195e9",
-      "shortCommitId": "\"cfd033",
-      "date": "2024-07-22T11:25:07+00:00\""
+      "commitId": "\"68a2c711a7b9524049f33286a6021ae24ef34bbb",
+      "shortCommitId": "\"68a2c7",
+      "date": "2024-07-23T08:32:48+00:00\""
     }
   },
   "gitRepository": "https://github.com/surroundaustralia/wa-3d-cadastre-demo",
@@ -17,20 +17,19 @@
   "validationReport": "https://literate-couscous-j7e78pr.pages.github.io/build/tests/report.html",
   "imports": [
     "https://opengeospatial.github.io/bblocks/register.json",
-    "https://icsm-au.github.io/3d-csdm-profile-wa/build/register.json",
-    "https://ogcincubator.github.io/topo-feature/build/register.json"
+    "https://icsm-au.github.io/3d-csdm-profile-wa/build/register.json"
   ],
   "bblocks": [
     {
       "itemIdentifier": "surround.demo.3dcadastre.topo-polyhedron",
-      "name": "Polydron using nested Polygons and Point topology",
+      "name": "3D (Polyhedron) using nested Polygons and Point topology",
       "abstract": "Defines options for describing 3D polyhedrons using features with Point geometry coordinates",
       "status": "under-development",
       "dateTimeAddition": "2023-11-01T00:00:00Z",
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2023-05-24",
+      "dateOfLastChange": "2024-07-24",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -51,7 +50,6 @@
       },
       "shaclClosures": [],
       "dependsOn": [
-        "ogc.geo.features.featureCollection",
         "ogc.geo.topo.features.topo-feature",
         "ogc.geo.topo.features.topo-feature-collection",
         "ogc.geo.topo.datatypes.topology"
@@ -64,7 +62,7 @@
       "sourceSchema": "https://literate-couscous-j7e78pr.pages.github.io/_sources/topo-polyhedron/schema.json",
       "sourceLdContext": "https://literate-couscous-j7e78pr.pages.github.io/_sources/topo-polyhedron/context.jsonld",
       "sourceFiles": "https://literate-couscous-j7e78pr.pages.github.io/_sources/topo-polyhedron/",
-      "validationPassed": true,
+      "validationPassed": false,
       "testOutputs": "https://github.com/surroundaustralia/wa-3d-cadastre-demo/blob/master/build/tests/demo/3dcadastre/topo-polyhedron/",
       "documentation": {
         "json-full": {
@@ -78,6 +76,127 @@
         "bblocks-viewer": {
           "mediatype": "text/html",
           "url": "https://literate-couscous-j7e78pr.pages.github.io/bblock/surround.demo.3dcadastre.topo-polyhedron"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "surround.demo.3dcadastre.wa-3d",
+      "name": "WA Cadastre - 3D profile",
+      "highlighted": true,
+      "abstract": "implements WA profile but requires points and certain parcel types to be 3D",
+      "status": "under-development",
+      "dateTimeAddition": "2023-07-31T00:00:00Z",
+      "itemClass": "schema",
+      "register": "icsm-csdm",
+      "version": "0.1",
+      "dateOfLastChange": "2024-07-24",
+      "sources": [
+        {
+          "title": "3D Cadastre Survey Data Model",
+          "link": "https://icsm-au.github.io/3d-csdm-common"
+        }
+      ],
+      "link": "https://github.com/icsm-au/3d-csdm-profile-wa",
+      "maturity": "development",
+      "scope": "profiles",
+      "tags": [
+        "wa",
+        "sosa",
+        "ssn",
+        "o&m",
+        "o&m&s",
+        "csdm",
+        "profile",
+        "3D"
+      ],
+      "superBBlock": false,
+      "shaclRules": {
+        "icsm.profiles.wa": [
+          "https://icsm-au.github.io/3d-csdm-profile-wa/profiles/wa-pointnames-shacl.ttl"
+        ],
+        "icsm.profiles.common": [
+          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl",
+          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl",
+          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl",
+          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl",
+          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-survey-metadata-shacl.ttl"
+        ],
+        "icsm.csdm.features.CSD": [
+          "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/CSD/tests/obs-match-vectors.shacl",
+          "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/parcel_module.shapes.ttl",
+          "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/container.shapes.ttl"
+        ],
+        "icsm.csdm.datatypes.compoundName": [
+          "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/datatypes/compoundName/rules.shacl"
+        ],
+        "ogc.geo.topo.features.topo-feature": [
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+        ],
+        "ogc.sosa.properties.observation": [
+          "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl"
+        ],
+        "ogc.geo.topo.features.topo-arc": [
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+        ],
+        "icsm.csdm.features.SurveyObservations": [
+          "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/SurveyObservations/rules.shacl"
+        ],
+        "ogc.geo.topo.features.topo-feature-collection": [
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+        ]
+      },
+      "shaclClosures": [
+        "https://icsm-au.github.io/icsm-vocabs/cadastre/CSD-Header/icsm-admin-unit-type.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/cadastre/SurveyObservations/icsm-angle-type.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/cadastre/SurveyObservations/icsm-distance-type.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/cadastre/SurveyObservations/icsm-equipment-type.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/cadastre/SurveyObservations/icsm-procedure-used.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/cadastre/CSD-Header/wa-crs.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/cadastre/CSD-Header/wa-survey-purpose.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/cadastre/CSD-Header/wa-local-government.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/cadastre/CSD-Header/wa-locality.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/cadastre/CSD-Header/wa-survey-documentation-type.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/cadastre/CSD-Header/wa-annotation.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/cadastre/CSD-Header/wa-survey-type.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/cadastre/CSD-Header/wa-vhd.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/cadastre/Parcels/wa-parcel-purpose.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/cadastre/Parcels/wa-parcel-state.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/cadastre/SurveyObservations/wa-procedure-used.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/cadastre/SurveyObservations/wa-vector-purpose.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/cadastre/SurveyPoints/monument/wa-monument-type.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/cadastre/SurveyPoints/condition/wa-condition.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/cadastre/SurveyPoints/purpose/wa-purpose.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/cadastre/SurveyPoints/other/wa-surveypoint-method.ttl",
+        "https://icsm-au.github.io/icsm-vocabs/cadastre/SurveyPoints/state/wa-state.ttl"
+      ],
+      "dependsOn": [
+        "icsm.profiles.wa"
+      ],
+      "ldContext": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/context.jsonld",
+      "schema": {
+        "application/yaml": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema.yaml",
+        "application/json": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema.json"
+      },
+      "sourceSchema": "https://literate-couscous-j7e78pr.pages.github.io/_sources/wa-3d/schema.json",
+      "sourceLdContext": "https://literate-couscous-j7e78pr.pages.github.io/_sources/wa-3d/context.jsonld",
+      "sourceFiles": "https://literate-couscous-j7e78pr.pages.github.io/_sources/wa-3d/",
+      "validationPassed": false,
+      "testOutputs": "https://github.com/surroundaustralia/wa-3d-cadastre-demo/blob/master/build/tests/demo/3dcadastre/wa-3d/",
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://literate-couscous-j7e78pr.pages.github.io/build/generateddocs/json-full/demo/3dcadastre/wa-3d/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://literate-couscous-j7e78pr.pages.github.io/build/generateddocs/markdown/demo/3dcadastre/wa-3d/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://literate-couscous-j7e78pr.pages.github.io/bblock/surround.demo.3dcadastre.wa-3d"
         }
       }
     }

@@ -1,0 +1,2914 @@
+{
+  "@context": [
+    "https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/wa/context.jsonld",
+    {
+      "wa-doc": "https://linked.data.gov.au/wa-documents/#",
+      "sensordesc": "https://linked.data.gov.au/sensor-descriptions/SN#",
+      "wa-leg": "https://www.legislation.wa.gov.au/legislation/prod/filestore.nsf/FileURL/$FILE/"
+    }
+  ],
+  "id": "sample_test_data",
+  "name": "Sample Test Data",
+  "description": "3D WA Cadastral Parcels for a duplex unit",
+  "type": "FeatureCollection",
+  "featureType": "CSD",
+  "tenureType": "wa-parcel-type:freehold",
+  "planType": "wa-survey-type:deposited-plan",
+  "purpose": "wa-survey-purpose:subdivision",
+  "surveyType": "wa-survey-type:SSA",
+  "time": {
+    "date": "2024-07-22"
+  },
+  "horizontalCRS": "epsg:7850",
+  "verticalCRS": "epsg:5111",
+  "bearingRotation": 0.0,
+  "surveyTitle": "Duplex Parcels 1 and 2 on Lot 933 DP 400715",
+  "adminUnit": [
+    {
+      "href": "wa-local-government:city-of-mandurah",
+      "rel": "related",
+      "role": "icsm-admin-unit-type:localGovernmentArea"
+    },
+    {
+      "href": "wa-locality:dudley-park",
+      "rel": "related",
+      "role": "icsm-admin-unit-type:locality"
+    }
+  ],
+  "hasProvenance": [],
+  "wasGeneratedBy": {
+    "id": "DP-1-S2",
+    "endedAtTime": "2024-07-21T14:22:45Z"
+  },
+  "features": [],
+  "referencedCSDs": [
+    {
+      "id": "DP_400715",
+      "name": "DP 400715",
+      "adminUnit": {
+        "href": "wa-locality:dudley-park",
+        "rel": "related",
+        "role": "icsm-admin-unit-type:locality"
+      },
+      "bearingRotation": 0.0,
+      "time": {
+        "date": "2013-10-24"
+      }
+    },
+    {
+      "id": "DP_74646",
+      "name": "DP 74646",
+      "adminUnit": {
+        "href": "wa-locality:dudley-park",
+        "rel": "related",
+        "role": "icsm-admin-unit-type:locality"
+      },
+      "bearingRotation": 0.0,
+      "time": {
+        "date": "2013-10-24"
+      }
+    }
+  ],
+  "points": [
+    {
+      "id": "BoundaryMarks",
+      "type": "FeatureCollection",
+      "featureType": "BoundaryMark",
+      "features": [
+        {
+          "id": "4097",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              380018.112,
+              6397673.237
+            ]
+          },
+          "properties": {
+            "name": "",
+            "purpose": "wa-surveypoint-purpose:monument",
+            "ptQualityMeasure": 0.001,
+            "comment": null,
+            "methodEstablished": "wa-pt-method:P",
+            "fromSurvey": "DP_400715",
+            "monumentedBy": {
+              "form": "wa-monument-form:cadastral-point-unmarked",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:unmarked"
+            }
+          }
+        },
+        {
+          "id": "4113",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              380056.766,
+              6397668.451
+            ]
+          },
+          "properties": {
+            "name": "",
+            "purpose": "wa-surveypoint-purpose:monument",
+            "ptQualityMeasure": 0.001,
+            "comment": null,
+            "methodEstablished": "wa-pt-method:P",
+            "fromSurvey": "DP_400715",
+            "monumentedBy": {
+              "form": "wa-monument-form:peg",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:new-mark"
+            }
+          }
+        },
+        {
+          "id": "4309",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              380056.678,
+              6397686.407
+            ]
+          },
+          "properties": {
+            "name": "",
+            "purpose": "wa-surveypoint-purpose:monument",
+            "ptQualityMeasure": 0.001,
+            "comment": null,
+            "methodEstablished": "wa-pt-method:P",
+            "fromSurvey": "DP_400715",
+            "monumentedBy": {
+              "form": "wa-monument-form:peg",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:new-mark"
+            }
+          }
+        },
+        {
+          "id": "4326",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              380021.486,
+              6397687.437
+            ]
+          },
+          "properties": {
+            "name": "",
+            "purpose": "wa-surveypoint-purpose:monument",
+            "ptQualityMeasure": 0.001,
+            "comment": null,
+            "methodEstablished": "wa-pt-method:P",
+            "fromSurvey": "DP_400715",
+            "monumentedBy": {
+              "form": "wa-monument-form:cadastral-point-unmarked",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:unmarked"
+            }
+          }
+        },
+        {
+          "id": "1003",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              380018.112,
+              6397673.237,
+              22.59
+            ]
+          },
+          "properties": {
+            "name": "",
+            "purpose": "wa-surveypoint-purpose:monument",
+            "ptQualityMeasure": 0.001,
+            "comment": "surface mark",
+            "methodEstablished": "wa-pt-method:P",
+            "monumentedBy": {
+              "form": "wa-monument-form:cadastral-point-unmarked",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:unmarked"
+            }
+          }
+        },
+        {
+          "id": "1002",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              380056.766,
+              6397668.451,
+              23.7
+            ]
+          },
+          "properties": {
+            "name": "",
+            "purpose": "wa-surveypoint-purpose:monument",
+            "ptQualityMeasure": 0.001,
+            "comment": "surface point",
+            "methodEstablished": "wa-pt-method:P",
+            "monumentedBy": {
+              "form": "wa-monument-form:peg",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:new-mark"
+            }
+          }
+        },
+        {
+          "id": "1001",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              380056.678,
+              6397686.407,
+              23.5
+            ]
+          },
+          "properties": {
+            "name": "",
+            "purpose": "wa-surveypoint-purpose:monument",
+            "ptQualityMeasure": 0.001,
+            "comment": "surface point",
+            "methodEstablished": "wa-pt-method:P",
+            "monumentedBy": {
+              "form": "wa-monument-form:peg",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:new-mark"
+            }
+          }
+        },
+        {
+          "id": "1004",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              380021.486,
+              6397687.437,
+              22.05
+            ]
+          },
+          "properties": {
+            "name": "",
+            "purpose": "wa-surveypoint-purpose:monument",
+            "ptQualityMeasure": 0.001,
+            "comment": "surface point",
+            "methodEstablished": "wa-pt-method:P",
+            "monumentedBy": {
+              "form": "wa-monument-form:cadastral-point-unmarked",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:unmarked"
+            }
+          }
+        },
+        {
+          "id": "2001",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              380024.441,
+              6397685.85,
+              23.05
+            ]
+          },
+          "properties": {
+            "name": "",
+            "purpose": "wa-surveypoint-purpose:monument",
+            "ptQualityMeasure": 0.001,
+            "comment": "surface mark",
+            "methodEstablished": "wa-pt-method:P",
+            "monumentedBy": {
+              "form": "wa-monument-form:cadastral-point-unmarked",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:unmarked"
+            }
+          }
+        },
+        {
+          "id": "2002",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              380044.432,
+              6397685.266,
+              23.75
+            ]
+          },
+          "properties": {
+            "name": "",
+            "purpose": "wa-surveypoint-purpose:monument",
+            "ptQualityMeasure": 0.001,
+            "comment": "surface point",
+            "methodEstablished": "wa-pt-method:P",
+            "monumentedBy": {
+              "form": "wa-monument-form:peg",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:new-mark"
+            }
+          }
+        },
+        {
+          "id": "2003",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              380044.295,
+              6397680.077,
+              23.85
+            ]
+          },
+          "properties": {
+            "name": "",
+            "purpose": "wa-surveypoint-purpose:monument",
+            "ptQualityMeasure": 0.001,
+            "comment": "surface point",
+            "methodEstablished": "wa-pt-method:P",
+            "monumentedBy": {
+              "form": "wa-monument-form:peg",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:new-mark"
+            }
+          }
+        },
+        {
+          "id": "2004",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              380044.16,
+              6397674.969,
+              23.8
+            ]
+          },
+          "properties": {
+            "name": "",
+            "purpose": "wa-surveypoint-purpose:monument",
+            "ptQualityMeasure": 0.001,
+            "comment": "surface point",
+            "methodEstablished": "wa-pt-method:P",
+            "monumentedBy": {
+              "form": "wa-monument-form:cadastral-point-unmarked",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:unmarked"
+            }
+          }
+        },
+        {
+          "id": "2005",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              380024.167,
+              6397675.497,
+              23.05
+            ]
+          },
+          "properties": {
+            "name": "",
+            "purpose": "wa-surveypoint-purpose:monument",
+            "ptQualityMeasure": 0.001,
+            "comment": "surface mark",
+            "methodEstablished": "wa-pt-method:P",
+            "monumentedBy": {
+              "form": "wa-monument-form:cadastral-point-unmarked",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:unmarked"
+            }
+          }
+        },
+        {
+          "id": "2006",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              380024.303,
+              6397680.627,
+              23.1
+            ]
+          },
+          "properties": {
+            "name": "",
+            "purpose": "wa-surveypoint-purpose:monument",
+            "ptQualityMeasure": 0.001,
+            "comment": "surface point",
+            "methodEstablished": "wa-pt-method:P",
+            "monumentedBy": {
+              "form": "wa-monument-form:peg",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:new-mark"
+            }
+          }
+        },
+        {
+          "id": "2101",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              380024.441,
+              6397685.85,
+              22.0
+            ]
+          },
+          "properties": {
+            "name": "",
+            "purpose": "wa-surveypoint-purpose:monument",
+            "ptQualityMeasure": 0.001,
+            "comment": "Duplex point",
+            "methodEstablished": "wa-pt-method:P",
+            "monumentedBy": {
+              "form": "wa-monument-form:cadastral-point-unmarked",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:unmarked"
+            }
+          }
+        },
+        {
+          "id": "2102",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              380044.432,
+              6397685.266,
+              22.0
+            ]
+          },
+          "properties": {
+            "name": "",
+            "purpose": "wa-surveypoint-purpose:monument",
+            "ptQualityMeasure": 0.001,
+            "comment": "Duplex point",
+            "methodEstablished": "wa-pt-method:P",
+            "monumentedBy": {
+              "form": "wa-monument-form:peg",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:new-mark"
+            }
+          }
+        },
+        {
+          "id": "2103",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              380044.295,
+              6397680.077,
+              22.0
+            ]
+          },
+          "properties": {
+            "name": "",
+            "purpose": "wa-surveypoint-purpose:monument",
+            "ptQualityMeasure": 0.001,
+            "comment": "Duplex point",
+            "methodEstablished": "wa-pt-method:P",
+            "monumentedBy": {
+              "form": "wa-monument-form:peg",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:new-mark"
+            }
+          }
+        },
+        {
+          "id": "2104",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              380044.16,
+              6397674.969,
+              22.0
+            ]
+          },
+          "properties": {
+            "name": "",
+            "purpose": "wa-surveypoint-purpose:monument",
+            "ptQualityMeasure": 0.001,
+            "comment": "Duplex point",
+            "methodEstablished": "wa-pt-method:P",
+            "monumentedBy": {
+              "form": "wa-monument-form:cadastral-point-unmarked",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:unmarked"
+            }
+          }
+        },
+        {
+          "id": "2105",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              380024.167,
+              6397675.497,
+              22.0
+            ]
+          },
+          "properties": {
+            "name": "",
+            "purpose": "wa-surveypoint-purpose:monument",
+            "ptQualityMeasure": 0.001,
+            "comment": "Duplex mark",
+            "methodEstablished": "wa-pt-method:P",
+            "monumentedBy": {
+              "form": "wa-monument-form:cadastral-point-unmarked",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:unmarked"
+            }
+          }
+        },
+        {
+          "id": "2106",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              380024.303,
+              6397680.627,
+              22.0
+            ]
+          },
+          "properties": {
+            "name": "",
+            "purpose": "wa-surveypoint-purpose:monument",
+            "ptQualityMeasure": 0.001,
+            "comment": "Duplex point",
+            "methodEstablished": "wa-pt-method:P",
+            "monumentedBy": {
+              "form": "wa-monument-form:peg",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:new-mark"
+            }
+          }
+        },
+        {
+          "id": "2201",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              380024.441,
+              6397685.85,
+              32.0
+            ]
+          },
+          "properties": {
+            "name": "",
+            "purpose": "wa-surveypoint-purpose:monument",
+            "ptQualityMeasure": 0.001,
+            "comment": "Duplex point",
+            "methodEstablished": "wa-pt-method:P",
+            "monumentedBy": {
+              "form": "wa-monument-form:cadastral-point-unmarked",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:unmarked"
+            }
+          }
+        },
+        {
+          "id": "2202",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              380044.432,
+              6397685.266,
+              32.0
+            ]
+          },
+          "properties": {
+            "name": "",
+            "purpose": "wa-surveypoint-purpose:monument",
+            "ptQualityMeasure": 0.001,
+            "comment": "Duplex point",
+            "methodEstablished": "wa-pt-method:P",
+            "monumentedBy": {
+              "form": "wa-monument-form:peg",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:new-mark"
+            }
+          }
+        },
+        {
+          "id": "2203",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              380044.295,
+              6397680.077,
+              32.0
+            ]
+          },
+          "properties": {
+            "name": "",
+            "purpose": "wa-surveypoint-purpose:monument",
+            "ptQualityMeasure": 0.001,
+            "comment": "Duplex point",
+            "methodEstablished": "wa-pt-method:P",
+            "monumentedBy": {
+              "form": "wa-monument-form:peg",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:new-mark"
+            }
+          }
+        },
+        {
+          "id": "2204",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              380044.16,
+              6397674.969,
+              32.0
+            ]
+          },
+          "properties": {
+            "name": "",
+            "purpose": "wa-surveypoint-purpose:monument",
+            "ptQualityMeasure": 0.001,
+            "comment": "Duplex point",
+            "methodEstablished": "wa-pt-method:P",
+            "monumentedBy": {
+              "form": "wa-monument-form:cadastral-point-unmarked",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:unmarked"
+            }
+          }
+        },
+        {
+          "id": "2205",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              380024.167,
+              6397675.497,
+              32.0
+            ]
+          },
+          "properties": {
+            "name": "",
+            "purpose": "wa-surveypoint-purpose:monument",
+            "ptQualityMeasure": 0.001,
+            "comment": "Duplex mark",
+            "methodEstablished": "wa-pt-method:P",
+            "monumentedBy": {
+              "form": "wa-monument-form:cadastral-point-unmarked",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:unmarked"
+            }
+          }
+        },
+        {
+          "id": "2206",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              380024.303,
+              6397680.627,
+              32.0
+            ]
+          },
+          "properties": {
+            "name": "",
+            "purpose": "wa-surveypoint-purpose:monument",
+            "ptQualityMeasure": 0.001,
+            "comment": "Duplex point",
+            "methodEstablished": "wa-pt-method:P",
+            "monumentedBy": {
+              "form": "wa-monument-form:peg",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:new-mark"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "vectorObservations": [
+    {
+      "id": "vectorobservation:adoptions",
+      "type": "FeatureCollection",
+      "featureType": "sosa:ObservationCollection",
+      "usedProcedure": "icsm-procedure-used:adoptions",
+      "properties": {
+        "resultTime": "2024-07-22T00:00:00",
+        "observedProperty": "surveyable:VectorDetermination",
+        "madeBySensor": {
+          "sensorType": "icsm-equipment-type:null"
+        }
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "45",
+            "resultTime": "2013-10-24T00:00:00",
+            "hasResult": {
+              "distance": 38.958,
+              "angle": 277.745698
+            },
+            "distanceType": "icsm-distance-type:ground",
+            "distanceAccuracy": 10000,
+            "fromSurveyDistance": "DP 400715",
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "fromSurveyBearing": "DP 400715"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "46",
+            "resultTime": "2013-10-24T00:00:00",
+            "hasResult": {
+              "distance": 17.96,
+              "angle": 179.593337
+            },
+            "distanceType": "icsm-distance-type:ground",
+            "distanceAccuracy": 10000,
+            "fromSurveyDistance": "DP 400715",
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "fromSurveyBearing": "DP 400715"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "47",
+            "resultTime": "2013-10-24T00:00:00",
+            "hasResult": {
+              "distance": 14.598,
+              "angle": 14.053629
+            },
+            "distanceType": "icsm-distance-type:ground",
+            "distanceAccuracy": 10000,
+            "fromSurveyDistance": "DP 400715",
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "fromSurveyBearing": "DP 400715"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "48",
+            "resultTime": "2013-10-24T00:00:00",
+            "hasResult": {
+              "distance": 35.215,
+              "angle": 92.364115
+            },
+            "distanceType": "icsm-distance-type:ground",
+            "distanceAccuracy": 10000,
+            "fromSurveyDistance": "DP 400715",
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "fromSurveyBearing": "DP 400715"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vectorobservation:calculations",
+      "type": "FeatureCollection",
+      "featureType": "sosa:ObservationCollection",
+      "usedProcedure": "icsm-procedure-used:calculation",
+      "properties": {
+        "resultTime": "2024-07-22T00:00:00",
+        "observedProperty": "surveyable:VectorDetermination",
+        "madeBySensor": {
+          "sensorType": "icsm-equipment-type:software"
+        }
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "145",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 38.965,
+              "angle": 277.745698,
+              "zenithDistance": 90.02849097
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "fromSurveyBearing": "DP 400715",
+            "zDAngleAccuracy": 10000
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "146",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 17.957,
+              "angle": 179.593337,
+              "zenithDistance": 89.98886226
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "fromSurveyBearing": "DP 400715",
+            "zDAngleAccuracy": 10000
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "147",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 14.602,
+              "angle": 14.053629,
+              "zenithDistance": 90.03013749
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "fromSurveyBearing": "DP 400715",
+            "zDAngleAccuracy": 10000
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "148",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 35.233,
+              "angle": 92.364115,
+              "zenithDistance": 89.9616742
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "fromSurveyBearing": "DP 400715",
+            "zDAngleAccuracy": 10000
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "2301",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 20.005,
+              "angle": 92.360533,
+              "zenithDistance": 90.0
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "zDAngleAccuracy": 10000
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "2302",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 5.192,
+              "angle": 177.799336,
+              "zenithDistance": 90.0
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "zDAngleAccuracy": 10000
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "2304",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 5.111,
+              "angle": 177.799336,
+              "zenithDistance": 90.0
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "zDAngleAccuracy": 10000
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "2305",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 20.004,
+              "angle": 272.200667,
+              "zenithDistance": 90.0
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "zDAngleAccuracy": 10000
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "2306",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 5.151,
+              "angle": 2.360536,
+              "zenithDistance": 90.0
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "zDAngleAccuracy": 10000
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "2307",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 5.208,
+              "angle": 2.042765,
+              "zenithDistance": 90.0
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "zDAngleAccuracy": 10000
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "2308",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 19.99,
+              "angle": 92.3153,
+              "zenithDistance": 90.0
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "zDAngleAccuracy": 10000
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "2409",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 20.005,
+              "angle": 92.360533,
+              "zenithDistance": 90.0
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "zDAngleAccuracy": 10000
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "2410",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 5.192,
+              "angle": 177.799336,
+              "zenithDistance": 90.0
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "zDAngleAccuracy": 10000
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "2411",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 5.111,
+              "angle": 177.799336,
+              "zenithDistance": 90.0
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "zDAngleAccuracy": 10000
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "2412",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 20.004,
+              "angle": 272.200667,
+              "zenithDistance": 90.0
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "zDAngleAccuracy": 10000
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "2413",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 5.151,
+              "angle": 2.360536,
+              "zenithDistance": 90.0
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "zDAngleAccuracy": 10000
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "2408",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 5.208,
+              "angle": 2.042765,
+              "zenithDistance": 90.0
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "zDAngleAccuracy": 10000
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "2414",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 19.99,
+              "angle": 92.3153,
+              "zenithDistance": 90.0
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "zDAngleAccuracy": 10000
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "2309",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 1.05,
+              "angle": 0.0,
+              "zenithDistance": 0.0
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "zDAngleAccuracy": 10000
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "2310",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 1.1,
+              "angle": 0.0,
+              "zenithDistance": 0.0
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "zDAngleAccuracy": 10000
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "2311",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 1.05,
+              "angle": 0.0,
+              "zenithDistance": 0.0
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "zDAngleAccuracy": 10000
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "2312",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 1.75,
+              "angle": 0.0,
+              "zenithDistance": 0.0
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "zDAngleAccuracy": 10000
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "2313",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 1.85,
+              "angle": 0.0,
+              "zenithDistance": 0.0
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "zDAngleAccuracy": 10000
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "2314",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 1.8,
+              "angle": 0.0,
+              "zenithDistance": 0.0
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "zDAngleAccuracy": 10000
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "2401",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 8.95,
+              "angle": 0.0,
+              "zenithDistance": 0.0
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "zDAngleAccuracy": 10000
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "2402",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 8.9,
+              "angle": 0.0,
+              "zenithDistance": 0.0
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "zDAngleAccuracy": 10000
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "2403",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 8.95,
+              "angle": 0.0,
+              "zenithDistance": 0.0
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "zDAngleAccuracy": 10000
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "2405",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 8.25,
+              "angle": 0.0,
+              "zenithDistance": 0.0
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "zDAngleAccuracy": 10000
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "2406",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 8.15,
+              "angle": 0.0,
+              "zenithDistance": 0.0
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "zDAngleAccuracy": 10000
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": null,
+          "properties": {
+            "hasFeatureOfInterest": "2407",
+            "resultTime": "2024-07-22T00:00:00",
+            "hasResult": {
+              "distance": 8.2,
+              "angle": 0.0,
+              "zenithDistance": 0.0
+            },
+            "distanceType": "icsm-distance-type:slope",
+            "distanceAccuracy": 10000,
+            "angleType": "icsm-angle-type:bearing",
+            "angleAccuracy": 10000,
+            "zDAngleAccuracy": 10000
+          }
+        }
+      ]
+    }
+  ],
+  "observedVectors": [
+    {
+      "id": "observedVectors",
+      "type": "FeatureCollection",
+      "featureType": "ObservedVector",
+      "features": [
+        {
+          "id": "45",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "4097",
+              "4113"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:lot-boundary",
+            "comment": null
+          }
+        },
+        {
+          "id": "46",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "4309",
+              "4113"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:road-boundary",
+            "comment": null
+          }
+        },
+        {
+          "id": "47",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "4097",
+              "4326"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:lot-boundary",
+            "comment": null
+          }
+        },
+        {
+          "id": "48",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "4326",
+              "4309"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:lot-boundary",
+            "comment": null
+          }
+        },
+        {
+          "id": "145",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "1003",
+              "1002"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:lot-boundary",
+            "comment": null
+          }
+        },
+        {
+          "id": "146",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "1001",
+              "1002"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:road-boundary",
+            "comment": null
+          }
+        },
+        {
+          "id": "147",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "1003",
+              "1004"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:lot-boundary",
+            "comment": null
+          }
+        },
+        {
+          "id": "148",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "1004",
+              "1001"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:lot-boundary",
+            "comment": null
+          }
+        },
+        {
+          "id": "201",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2001",
+              "2002"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:terrain-intersection",
+            "comment": null
+          }
+        },
+        {
+          "id": "202",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2002",
+              "2003"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:terrain-intersection",
+            "comment": null
+          }
+        },
+        {
+          "id": "203",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2003",
+              "2004"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:terrain-intersection",
+            "comment": null
+          }
+        },
+        {
+          "id": "204",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2004",
+              "2005"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:terrain-intersection",
+            "comment": null
+          }
+        },
+        {
+          "id": "205",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2005",
+              "2006"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:terrain-intersection",
+            "comment": null
+          }
+        },
+        {
+          "id": "206",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2006",
+              "2001"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:terrain-intersection",
+            "comment": null
+          }
+        },
+        {
+          "id": "301",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "1004",
+              "2001"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:surface-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "302",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "1004",
+              "2002"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:surface-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "303",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "1001",
+              "2002"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:surface-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "304",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "1001",
+              "2003"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:surface-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "305",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "1002",
+              "2003"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:surface-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "306",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "1002",
+              "2004"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:surface-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "307",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "1003",
+              "2004"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:surface-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "308",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "1003",
+              "2005"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:surface-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "309",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "1003",
+              "2006"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:surface-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "310",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "1004",
+              "2006"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:surface-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "2301",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2101",
+              "2102"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:strata-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "2302",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2102",
+              "2103"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:strata-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "2304",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2103",
+              "2104"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:strata-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "2305",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2104",
+              "2105"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:strata-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "2306",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2105",
+              "2106"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:strata-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "2307",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2106",
+              "2101"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:strata-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "2308",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2106",
+              "2103"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:strata-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "2309",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2101",
+              "2001"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:strata-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "2310",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2106",
+              "2006"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:strata-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "2311",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2105",
+              "2005"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:strata-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "2312",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2102",
+              "2002"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:strata-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "2313",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2103",
+              "2003"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:strata-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "2314",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2104",
+              "2004"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:strata-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "2401",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2001",
+              "2201"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:strata-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "2402",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2006",
+              "2206"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:strata-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "2403",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2005",
+              "2205"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:strata-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "2405",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2002",
+              "2202"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:strata-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "2406",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2003",
+              "2203"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:strata-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "2407",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2004",
+              "2204"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:strata-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "2408",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2206",
+              "2201"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:strata-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "2409",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2201",
+              "2202"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:strata-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "2410",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2202",
+              "2203"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:strata-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "2411",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2203",
+              "2204"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:strata-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "2412",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2204",
+              "2205"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:strata-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "2413",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2205",
+              "2206"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:strata-edge",
+            "comment": null
+          }
+        },
+        {
+          "id": "2414",
+          "type": "Feature",
+          "featureType": "ObservedVector",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              "2206",
+              "2203"
+            ]
+          },
+          "properties": {
+            "purpose": "wa-vector-purpose:strata-edge",
+            "comment": null
+          }
+        }
+      ]
+    }
+  ],
+  "parcels": [
+    {
+      "id": "PrimaryParcels",
+      "type": "FeatureCollection",
+      "featureType": "PrimaryParcel",
+      "properties": null,
+      "features": [
+        {
+          "id": "1313",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Polygon",
+            "references": [
+              [
+                "46",
+                "45",
+                "47",
+                "48"
+              ]
+            ]
+          },
+          "properties": {
+            "appellation": {
+              "label": "Lot 933 DP 400715",
+              "hasPart": [
+                {
+                  "type": "ParcelType",
+                  "label": "Lot"
+                },
+                {
+                  "type": "ParcelIdentifier",
+                  "label": "933"
+                },
+                {
+                  "type": "PlanType",
+                  "label": "DP"
+                },
+                {
+                  "type": "PlanIdentifier",
+                  "label": "400715"
+                }
+              ]
+            },
+            "area": 598.69,
+            "parcelType": "wa-parcel-type:freehold",
+            "parcelPurpose": "wa-parcel-purpose:lot",
+            "parcelState": "wa-parcel-state:created",
+            "interests": [
+              {
+                "interestLink": "689-654-868",
+                "interestType": "wa-secondary-purpose:restrictive-covenant-building-envelope",
+                "statuteLink": "wa-interest:easement-tla-136D",
+                "originalNotificationLink": "wa-doc:M443039",
+                "dateExpires": "2022-12-31T23:59:59Z",
+                "burdenedParcels": [
+                  "1313"
+                ],
+                "benefitedParcels": [
+                  "1301",
+                  "1302",
+                  "1303",
+                  "1304",
+                  "1305",
+                  "1306",
+                  "1307",
+                  "1308",
+                  "1309",
+                  "1310",
+                  "1311",
+                  "1312",
+                  "1314",
+                  "1315",
+                  "1316",
+                  "1317",
+                  "1318",
+                  "1319",
+                  "1320",
+                  "1321",
+                  "1322",
+                  "1323",
+                  "1324",
+                  "1325",
+                  "1326",
+                  "1327",
+                  "1328",
+                  "1329",
+                  "1330"
+                ]
+              },
+              {
+                "interestLink": "689-654-812",
+                "interestType": "wa-secondary-purpose:notification",
+                "statuteLink": "wa-interest-type:165-pda",
+                "originalNotificationLink": "wa-doc:M443040",
+                "desc": "Mosquitoes",
+                "burdenedParcels": [
+                  "1313"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "9000",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Polyhedron",
+            "references": [
+              [
+                "8001",
+                "8002",
+                "8003",
+                "8004",
+                "8005",
+                "8006"
+              ]
+            ]
+          },
+          "properties": {
+            "appellation": {
+              "label": "Duplex 1 Lot 933 DP 400715",
+              "hasPart": [
+                {
+                  "type": "StrataType",
+                  "label": "Duplex"
+                },
+                {
+                  "type": "StrataIdentifier",
+                  "label": "1"
+                },
+                {
+                  "type": "ParcelType",
+                  "label": "Lot"
+                },
+                {
+                  "type": "ParcelIdentifier",
+                  "label": "933"
+                },
+                {
+                  "type": "PlanType",
+                  "label": "DP"
+                },
+                {
+                  "type": "PlanIdentifier",
+                  "label": "400715"
+                }
+              ]
+            },
+            "volume": 1000.0,
+            "parcelType": "wa-parcel-type:freehold",
+            "parcelPurpose": "wa-parcel-purpose:strata-lot",
+            "parcelState": "wa-parcel-state:created",
+            "interests": []
+          }
+        },
+        {
+          "id": "9001",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Polyhedron",
+            "references": [
+              [
+                "-8006",
+                "8007",
+                "8008",
+                "8009",
+                "8010",
+                "8011"
+              ]
+            ]
+          },
+          "properties": {
+            "appellation": {
+              "label": "Duplex 2 Lot 933 DP 400715",
+              "hasPart": [
+                {
+                  "type": "StrataType",
+                  "label": "Duplex"
+                },
+                {
+                  "type": "StrataIdentifier",
+                  "label": "2"
+                },
+                {
+                  "type": "ParcelType",
+                  "label": "Lot"
+                },
+                {
+                  "type": "ParcelIdentifier",
+                  "label": "933"
+                },
+                {
+                  "type": "PlanType",
+                  "label": "DP"
+                },
+                {
+                  "type": "PlanIdentifier",
+                  "label": "400715"
+                }
+              ]
+            },
+            "volume": 1000.0,
+            "parcelType": "wa-parcel-type:freehold",
+            "parcelPurpose": "wa-parcel-purpose:strata-lot",
+            "parcelState": "wa-parcel-state:created",
+            "interests": []
+          }
+        }
+      ]
+    }
+  ],
+  "faces": [
+    {
+      "id": "ObjectFaces",
+      "type": "FeatureCollection",
+      "featureType": "Face",
+      "properties": null,
+      "features": [
+        {
+          "id": "4001",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Polygon",
+            "references": [
+              [
+                "301",
+                "201",
+                "302"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "4002",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Polygon",
+            "references": [
+              [
+                "302",
+                "148",
+                "302"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "4003",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Polygon",
+            "references": [
+              [
+                "304",
+                "303",
+                "202"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "4004",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Polygon",
+            "references": [
+              [
+                "146",
+                "304",
+                "305"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "4005",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Polygon",
+            "references": [
+              [
+                "306",
+                "305",
+                "203"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "4006",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Polygon",
+            "references": [
+              [
+                "145",
+                "306",
+                "307"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "4007",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Polygon",
+            "references": [
+              [
+                "307",
+                "204",
+                "308"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "4008",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Polygon",
+            "references": [
+              [
+                "308",
+                "205",
+                "309"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "4009",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Polygon",
+            "references": [
+              [
+                "147",
+                "309",
+                "310"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "4010",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Polygon",
+            "references": [
+              [
+                "301",
+                "310",
+                "206"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "8001",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Polygon",
+            "references": [
+              [
+                "2412",
+                "2403",
+                "2311",
+                "2305",
+                "2314",
+                "2407"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "8002",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Polygon",
+            "references": [
+              [
+                "2413",
+                "2402",
+                "2310",
+                "2306",
+                "2311",
+                "2403"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "8003",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Polygon",
+            "references": [
+              [
+                "2412",
+                "2411",
+                "2414",
+                "2413"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "8004",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Polygon",
+            "references": [
+              [
+                "2411",
+                "2407",
+                "2314",
+                "2304",
+                "2313",
+                "2406"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "8005",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Polygon",
+            "references": [
+              [
+                "2305",
+                "2304",
+                "2308",
+                "2306"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "8006",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Polygon",
+            "references": [
+              [
+                "2414",
+                "2406",
+                "2313",
+                "2308",
+                "2310",
+                "2401"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "8007",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Polygon",
+            "references": [
+              [
+                "2409",
+                "2408",
+                "2414",
+                "2410"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "8008",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Polygon",
+            "references": [
+              [
+                "2408",
+                "2401",
+                "2309",
+                "2307",
+                "2310",
+                "2402"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "8009",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Polygon",
+            "references": [
+              [
+                "2308",
+                "2307",
+                "2301",
+                "2302"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "8010",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Polygon",
+            "references": [
+              [
+                "2410",
+                "2406",
+                "2313",
+                "2302",
+                "2312",
+                "2405"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "8011",
+          "type": "Feature",
+          "geometry": null,
+          "topology": {
+            "type": "Polygon",
+            "references": [
+              [
+                "2409",
+                "2401",
+                "2309",
+                "2301",
+                "2312",
+                "2405"
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "surfaceTin": [
+    {
+      "id": "surfaces",
+      "type": "FeatureCollection",
+      "featureType": "Surface",
+      "properties": null,
+      "features": [
+        {
+          "id": "5000",
+          "type": "feature",
+          "geometry": null,
+          "topology": {
+            "type": "TIN",
+            "references": [
+              [
+                "4001",
+                "4002",
+                "4003",
+                "4004",
+                "4005",
+                "4006",
+                "4007",
+                "4008",
+                "4009",
+                "4010"
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "terrainIntersectionCurve": [
+    {
+      "id": "tic",
+      "type": "FeatureCollection",
+      "featureType": "TerrainIntersectionCurve",
+      "properties": null,
+      "features": [
+        {
+          "id": "6000",
+          "type": "feature",
+          "geometry": null,
+          "topology": {
+            "type": "LineString",
+            "references": [
+              [
+                "201",
+                "202",
+                "203",
+                "204",
+                "205",
+                "206"
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

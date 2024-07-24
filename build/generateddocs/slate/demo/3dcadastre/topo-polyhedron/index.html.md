@@ -1,5 +1,5 @@
 ---
-title: Polydron using nested Polygons and Point topology (Schema)
+title: 3D (Polyhedron) using nested Polygons and Point topology (Schema)
 
 language_tabs:
   - json: JSON
@@ -8,7 +8,7 @@ language_tabs:
 
 toc_footers:
   - Version 0.1
-  - <a href='#'>Polydron using nested Polygons and Point topology</a>
+  - <a href='#'>3D (Polyhedron) using nested Polygons and Point topology</a>
   - <a href='https://blocks.ogc.org/register.html'>Building Blocks register</a>
 
 search: true
@@ -16,11 +16,11 @@ search: true
 code_clipboard: true
 
 meta:
-  - name: Polydron using nested Polygons and Point topology (Schema)
+  - name: 3D (Polyhedron) using nested Polygons and Point topology (Schema)
 ---
 
 
-# Polydron using nested Polygons and Point topology `surround.demo.3dcadastre.topo-polyhedron`
+# 3D (Polyhedron) using nested Polygons and Point topology `surround.demo.3dcadastre.topo-polyhedron`
 
 Defines options for describing 3D polyhedrons using features with Point geometry coordinates
 
@@ -29,8 +29,8 @@ Defines options for describing 3D polyhedrons using features with Point geometry
     <a href="http://www.opengis.net/def/status/under-development" target="_blank" data-rainbow-uri>Under development</a>
 </p>
 
-<aside class="success">
-This building block is <strong><a href="https://github.com/surroundaustralia/wa-3d-cadastre-demo/blob/master/build/tests/demo/3dcadastre/topo-polyhedron/" target="_blank">valid</a></strong>
+<aside class="warning">
+Validation for this building block has <strong><a href="https://github.com/surroundaustralia/wa-3d-cadastre-demo/blob/master/build/tests/demo/3dcadastre/topo-polyhedron/" target="_blank">failed</a></strong>
 </aside>
 
 # Description
@@ -1037,9 +1037,7 @@ $defs:
       required:
       - topology
   ContainedFeatureCollection:
-    anyOf:
-    - $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema.yaml
+    $ref: https://ogcincubator.github.io/topo-feature/build/annotated/geo/topo/features/topo-feature-collection/schema.yaml
 oneOf:
 - $ref: '#/$defs/PolyhedralFeature'
 - $ref: '#/$defs/ContainedFeatureCollection'
