@@ -1246,7 +1246,7 @@
               "x-jsonld-id": "http://purl.org/dc/terms/time",
               "allOf": [
                 {
-                  "$ref": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema-oas3.0.json#/x-defs/ogc.geo.json-fg.time_1"
+                  "$ref": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema-oas3.0.json#/x-defs/ogc.geo.json-fg.time"
                 }
               ]
             },
@@ -5085,13 +5085,31 @@
           "type": "object",
           "properties": {
             "date": {
-              "$ref": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema-oas3.0.json#/x-defs/ogc.geo.json-fg.time/$defs/date"
+              "x-jsonld-id": "http://www.w3.org/2006/time#hasTime",
+              "x-jsonld-type": "http://www.w3.org/2001/XMLSchema#date",
+              "allOf": [
+                {
+                  "$ref": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema-oas3.0.json#/x-defs/ogc.geo.json-fg.time/$defs/date"
+                }
+              ]
             },
             "timestamp": {
-              "$ref": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema-oas3.0.json#/x-defs/ogc.geo.json-fg.time/$defs/timestamp"
+              "x-jsonld-id": "http://www.w3.org/2006/time#hasTime",
+              "x-jsonld-type": "http://www.w3.org/2001/XMLSchema#dateTime",
+              "allOf": [
+                {
+                  "$ref": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema-oas3.0.json#/x-defs/ogc.geo.json-fg.time/$defs/timestamp"
+                }
+              ]
             },
             "interval": {
-              "$ref": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema-oas3.0.json#/x-defs/ogc.geo.json-fg.time/$defs/interval"
+              "x-jsonld-id": "http://www.w3.org/2006/time#hasTime",
+              "x-jsonld-container": "@list",
+              "allOf": [
+                {
+                  "$ref": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema-oas3.0.json#/x-defs/ogc.geo.json-fg.time/$defs/interval"
+                }
+              ]
             }
           }
         }
@@ -5127,7 +5145,11 @@
           }
         }
       },
-      "x-schema-source": "https://beta.schemas.opengis.net/json-fg/time.json",
+      "x-jsonld-prefixes": {
+        "time": "http://www.w3.org/2006/time#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
+      },
+      "x-schema-source": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.json",
       "x-schema-id": "https://beta.schemas.opengis.net/json-fg/time.json",
       "x-schema-version": "https://json-schema.org/draft/2020-12/schema",
       "nullable": true
@@ -5143,7 +5165,12 @@
             {
               "properties": {
                 "sensorType": {
-                  "$ref": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema-oas3.0.json#/x-defs/icsm.csdm.features.SurveyObservations/$defs/coderef"
+                  "x-jsonld-id": "@type",
+                  "allOf": [
+                    {
+                      "$ref": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema-oas3.0.json#/x-defs/icsm.csdm.features.SurveyObservations/$defs/coderef"
+                    }
+                  ]
                 }
               },
               "required": [
@@ -5155,15 +5182,18 @@
                 {
                   "properties": {
                     "sensorType": {
+                      "x-jsonld-id": "@type",
                       "enum": [
                         "DifferentialGPS"
                       ]
                     },
                     "baseSensor": {
-                      "type": "string"
+                      "type": "string",
+                      "x-jsonld-id": "https://linked.data.gov.au/def/csdm/sensors/baseSensor"
                     },
                     "roverSensor": {
-                      "type": "string"
+                      "type": "string",
+                      "x-jsonld-id": "https://linked.data.gov.au/def/csdm/sensors/roverSensor"
                     }
                   },
                   "required": [
@@ -5178,7 +5208,8 @@
                         "enum": [
                           "DifferentialGPS"
                         ]
-                      }
+                      },
+                      "x-jsonld-id": "@type"
                     }
                   }
                 }
@@ -5209,7 +5240,12 @@
           "type": "object",
           "properties": {
             "angles": {
-              "$ref": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema-oas3.0.json#/x-defs/icsm.csdm.features.SurveyObservations/$defs/angles"
+              "x-jsonld-id": "https://linked.data.gov.au/def/csdm/utils/geopose/angles",
+              "allOf": [
+                {
+                  "$ref": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema-oas3.0.json#/x-defs/icsm.csdm.features.SurveyObservations/$defs/angles"
+                }
+              ]
             }
           },
           "required": [
@@ -5591,7 +5627,7 @@
           "$ref": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema-oas3.0.json#/x-defs/featureschema"
         },
         "time": {
-          "$ref": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema-oas3.0.json#/x-defs/ogc.geo.json-fg.time"
+          "$ref": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema-oas3.0.json#/x-defs/ogc.geo.json-fg.time_1"
         },
         "coordRefSys": {
           "$ref": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema-oas3.0.json#/x-defs/coordrefsys"
@@ -5689,83 +5725,6 @@
       "x-schema-source": "https://beta.schemas.opengis.net/json-fg/link.json",
       "x-schema-id": "https://beta.schemas.opengis.net/json-fg/link.json",
       "x-schema-version": "https://json-schema.org/draft/2020-12/schema"
-    },
-    "ogc.geo.json-fg.time_1": {
-      "title": "the time member",
-      "description": "This JSON Schema is part of JSON-FG version 0.2.2",
-      "oneOf": [
-        {
-          "type": "object",
-          "properties": {
-            "date": {
-              "x-jsonld-id": "http://www.w3.org/2006/time#hasTime",
-              "x-jsonld-type": "http://www.w3.org/2001/XMLSchema#date",
-              "allOf": [
-                {
-                  "$ref": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema-oas3.0.json#/x-defs/ogc.geo.json-fg.time_1/$defs/date"
-                }
-              ]
-            },
-            "timestamp": {
-              "x-jsonld-id": "http://www.w3.org/2006/time#hasTime",
-              "x-jsonld-type": "http://www.w3.org/2001/XMLSchema#dateTime",
-              "allOf": [
-                {
-                  "$ref": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema-oas3.0.json#/x-defs/ogc.geo.json-fg.time_1/$defs/timestamp"
-                }
-              ]
-            },
-            "interval": {
-              "x-jsonld-id": "http://www.w3.org/2006/time#hasTime",
-              "x-jsonld-container": "@list",
-              "allOf": [
-                {
-                  "$ref": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema-oas3.0.json#/x-defs/ogc.geo.json-fg.time_1/$defs/interval"
-                }
-              ]
-            }
-          }
-        }
-      ],
-      "$defs": {
-        "date": {
-          "type": "string",
-          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
-        },
-        "timestamp": {
-          "type": "string",
-          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?Z$"
-        },
-        "interval": {
-          "type": "array",
-          "minItems": 2,
-          "maxItems": 2,
-          "items": {
-            "oneOf": [
-              {
-                "$ref": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema-oas3.0.json#/x-defs/ogc.geo.json-fg.time_1/$defs/date"
-              },
-              {
-                "$ref": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema-oas3.0.json#/x-defs/ogc.geo.json-fg.time_1/$defs/timestamp"
-              },
-              {
-                "type": "string",
-                "enum": [
-                  ".."
-                ]
-              }
-            ]
-          }
-        }
-      },
-      "x-jsonld-prefixes": {
-        "time": "http://www.w3.org/2006/time#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#"
-      },
-      "x-schema-source": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.json",
-      "x-schema-id": "https://beta.schemas.opengis.net/json-fg/time.json",
-      "x-schema-version": "https://json-schema.org/draft/2020-12/schema",
-      "nullable": true
     },
     "place": {
       "title": "the place member",
@@ -6977,7 +6936,7 @@
               "x-jsonld-id": "http://purl.org/dc/terms/time",
               "allOf": [
                 {
-                  "$ref": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema-oas3.0.json#/x-defs/ogc.geo.json-fg.time_1"
+                  "$ref": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema-oas3.0.json#/x-defs/ogc.geo.json-fg.time"
                 }
               ]
             },
@@ -7512,6 +7471,61 @@
       },
       "x-schema-source": "https://opengeospatial.github.io/ogcapi-sosa/build/annotated/sosa/features/observation/schema.json",
       "x-schema-version": "https://json-schema.org/draft/2020-12/schema"
+    },
+    "ogc.geo.json-fg.time_1": {
+      "title": "the time member",
+      "description": "This JSON Schema is part of JSON-FG version 0.2.2",
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "date": {
+              "$ref": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema-oas3.0.json#/x-defs/ogc.geo.json-fg.time_1/$defs/date"
+            },
+            "timestamp": {
+              "$ref": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema-oas3.0.json#/x-defs/ogc.geo.json-fg.time_1/$defs/timestamp"
+            },
+            "interval": {
+              "$ref": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema-oas3.0.json#/x-defs/ogc.geo.json-fg.time_1/$defs/interval"
+            }
+          }
+        }
+      ],
+      "$defs": {
+        "date": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "timestamp": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?Z$"
+        },
+        "interval": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "oneOf": [
+              {
+                "$ref": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema-oas3.0.json#/x-defs/ogc.geo.json-fg.time_1/$defs/date"
+              },
+              {
+                "$ref": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/wa-3d/schema-oas3.0.json#/x-defs/ogc.geo.json-fg.time_1/$defs/timestamp"
+              },
+              {
+                "type": "string",
+                "enum": [
+                  ".."
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "x-schema-source": "https://beta.schemas.opengis.net/json-fg/time.json",
+      "x-schema-id": "https://beta.schemas.opengis.net/json-fg/time.json",
+      "x-schema-version": "https://json-schema.org/draft/2020-12/schema",
+      "nullable": true
     },
     "ogc.geo.common.data_types.bounding_box": {
       "type": "array",

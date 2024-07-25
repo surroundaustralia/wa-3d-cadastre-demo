@@ -309,7 +309,10 @@
     },
     "madeBySensor": {
       "@context": {
-        "@base": "https://linked.data.gov.au/def/csdm/sensors/Sensor"
+        "@base": "https://linked.data.gov.au/def/csdm/sensors/Sensor",
+        "sensorType": "@type",
+        "baseSensor": "csdm:sensors/baseSensor",
+        "roverSensor": "csdm:sensors/roverSensor"
       },
       "@id": "sosa:madeBySensor",
       "@type": "@id"
@@ -451,7 +454,12 @@
           "@id": "sosa:hasResult",
           "@type": "@id",
           "@context": {
-            "pose": "surv:pose",
+            "pose": {
+              "@context": {
+                "angles": "csdm:utils/geopose/angles"
+              },
+              "@id": "surv:pose"
+            },
             "distance": "surv:distance"
           }
         },
@@ -805,20 +813,7 @@
       "@id": "rdfs:seeAlso"
     },
     "time": {
-      "@context": {
-        "date": {
-          "@id": "owlTime:hasTime",
-          "@type": "xsd:date"
-        },
-        "timestamp": {
-          "@id": "owlTime:hasTime",
-          "@type": "xsd:dateTime"
-        },
-        "interval": {
-          "@id": "owlTime:hasTime",
-          "@container": "@list"
-        }
-      },
+      "@context": {},
       "@id": "dct:time"
     },
     "coordRefSys": "http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS",
@@ -857,6 +852,18 @@
       },
       "@type": "@id",
       "@id": "geojson:topology"
+    },
+    "date": {
+      "@id": "owlTime:hasTime",
+      "@type": "xsd:date"
+    },
+    "timestamp": {
+      "@id": "owlTime:hasTime",
+      "@type": "xsd:dateTime"
+    },
+    "interval": {
+      "@id": "owlTime:hasTime",
+      "@container": "@list"
     },
     "name": "rdfs:label",
     "bearingRotation": "container:bearingRotation",

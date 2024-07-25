@@ -106,7 +106,7 @@
   "name": "Building Blocks - 3D Demo of ICSM 3DCSDM for WA",
   "abstract": "This is an example showing the potential for the WA profile of the ICSM Cadastre Survey Model to be extended to full 3D \n",
   "description": "It extends the topo-feature base to support Polyhedron objects and constrains the WA-Profile to force use of these for parcels of certain types.\n",
-  "modified": "2024-07-24T23:54:19.720813",
+  "modified": "2024-07-25T00:19:30.418307",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"68a2c711a7b9524049f33286a6021ae24ef34bbb",
@@ -138,7 +138,7 @@
       "itemClass": "schema",
       "register": "ogcincubator",
       "version": "0.1",
-      "dateOfLastChange": "2024-07-24",
+      "dateOfLastChange": "2023-05-24",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -148,20 +148,20 @@
         "topology"
       ],
       "shaclRules": {
-        "ogc.geo.topo.features.topo-feature-collection": [
+        "ogc.geo.topo.features.topo-feature": [
           "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
           "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ],
-        "ogc.geo.topo.features.topo-feature": [
+        "ogc.geo.topo.features.topo-feature-collection": [
           "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
           "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ]
       },
       "shaclClosures": [],
       "dependsOn": [
-        "ogc.geo.topo.datatypes.topology",
+        "ogc.geo.topo.features.topo-feature",
         "ogc.geo.topo.features.topo-feature-collection",
-        "ogc.geo.topo.features.topo-feature"
+        "ogc.geo.topo.datatypes.topology"
       ],
       "ldContext": "https://literate-couscous-j7e78pr.pages.github.io/build/annotated/demo/3dcadastre/topo-polyhedron/context.jsonld",
       "schema": {
@@ -203,7 +203,7 @@
       "itemClass": "schema",
       "register": "icsm-csdm",
       "version": "0.1",
-      "dateOfLastChange": "2024-07-24",
+      "dateOfLastChange": "2023-08-08",
       "sources": [
         {
           "title": "3D Cadastre Survey Data Model",
@@ -229,16 +229,16 @@
           "https://icsm-au.github.io/3d-csdm-profile-wa/profiles/wa-pointnames-shacl.ttl"
         ],
         "icsm.profiles.common": [
+          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl",
           "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-survey-metadata-shacl.ttl",
-          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl",
           "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl",
-          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl",
-          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl"
+          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl",
+          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl"
         ],
         "icsm.csdm.features.CSD": [
-          "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/CSD/tests/obs-match-vectors.shacl",
           "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/parcel_module.shapes.ttl",
-          "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/container.shapes.ttl"
+          "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/container.shapes.ttl",
+          "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/CSD/tests/obs-match-vectors.shacl"
         ],
         "icsm.csdm.datatypes.compoundName": [
           "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/datatypes/compoundName/rules.shacl"
@@ -297,7 +297,7 @@
       "sourceSchema": "https://literate-couscous-j7e78pr.pages.github.io/_sources/wa-3d/schema.json",
       "sourceLdContext": "https://literate-couscous-j7e78pr.pages.github.io/_sources/wa-3d/context.jsonld",
       "sourceFiles": "https://literate-couscous-j7e78pr.pages.github.io/_sources/wa-3d/",
-      "validationPassed": false,
+      "validationPassed": true,
       "testOutputs": "https://github.com/surroundaustralia/wa-3d-cadastre-demo/blob/master/build/tests/demo/3dcadastre/wa-3d/",
       "documentation": {
         "markdown": {
