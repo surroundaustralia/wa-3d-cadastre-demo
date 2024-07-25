@@ -1584,7 +1584,7 @@
             ]
           },
           "properties": {
-            "purpose": "wa-vector-purpose:terrain-intersection",
+            "purpose": "wa-vector-purpose:terrain-intersection-curve",
             "comment": null
           }
         },
