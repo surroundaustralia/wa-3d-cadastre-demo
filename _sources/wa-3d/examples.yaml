@@ -12,6 +12,8 @@
       - A surface TIN
       - A terrain intersection curve
 
+    ![visualisation](/wa-3d-cadastre-demo/assets/wa-observation-ex.png)
+
   base-output-filename: 3dparcel-wa-1
   snippets:
     - language: json
