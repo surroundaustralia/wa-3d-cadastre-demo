@@ -2,7 +2,7 @@
   "title": "Validation report for surround.demo.3dcadastre.topo-polyhedron - 3D (Polyhedron) using nested Polygons and Point topology",
   "bblockName": "3D (Polyhedron) using nested Polygons and Point topology",
   "bblockId": "surround.demo.3dcadastre.topo-polyhedron",
-  "generated": "2024-07-25T00:25:06.935506+00:00",
+  "generated": "2024-07-31T02:19:59.481277+00:00",
   "result": false,
   "items": [
     {
@@ -17,11 +17,6 @@
       },
       "result": false,
       "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": []
-        },
         {
           "name": "FILES",
           "title": "Files",
@@ -66,41 +61,9 @@
           ]
         },
         {
-          "name": "JSON_LD",
-          "title": "JSON-LD",
-          "entries": []
-        },
-        {
-          "name": "TURTLE",
-          "title": "Turtle",
-          "entries": []
-        },
-        {
           "name": "SHACL",
           "title": "SHACL",
           "entries": [
-            {
-              "op": "shacl-report",
-              "shaclFile": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-              "focusNodes": {
-                "topo:testTopoLinesReferencePoints": {
-                  "nodes": []
-                },
-                "topo:testTopoReferencesExist": {
-                  "nodes": [
-                    "<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:topology"
-                  ]
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoLinesReferencePoints: *none*\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/DENW19AL0000giv5BL>/geojson:topology\n"
-            },
             {
               "op": "shacl-report",
               "shaclFile": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
@@ -111,41 +74,58 @@
             {
               "shaclFile": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
               "focusNodes": {
-                "_:n83d70d1357a244e4926b286c80afc036b1": {
+                "_:n15784084ea2c46c2b524b982d2717161b1": {
                   "nodes": [
-                    "<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry",
-                    "<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry",
                     "<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry",
+                    "<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry",
                     "<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry",
-                    "<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry",
+                    "<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry",
                     "<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry",
                     "<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry",
-                    "<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry"
+                    "<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry",
+                    "<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry"
                   ]
                 },
-                "_:n83d70d1357a244e4926b286c80afc036b3": {
+                "_:n15784084ea2c46c2b524b982d2717161b3": {
                   "nodes": [
-                    "<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry",
-                    "<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry",
-                    "<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:geometry",
                     "<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry",
+                    "<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry",
                     "<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry",
-                    "<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry",
+                    "<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry",
                     "<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry",
+                    "<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:geometry",
                     "<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry",
-                    "<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry"
+                    "<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry",
+                    "<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry"
                   ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n83d70d1357a244e4926b286c80afc036b1: <http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry\n - Shape _:n83d70d1357a244e4926b286c80afc036b3: <http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry,<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry\n"
+              "message": "Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:\n - Shape _:n15784084ea2c46c2b524b982d2717161b1: <http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry\n - Shape _:n15784084ea2c46c2b524b982d2717161b3: <http://www.example.com/features/P479824.155_5705853.684_100>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_100>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_100>/geojson:geometry,<http://www.example.com/features/P479824.155_5705853.684_110>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_100>/geojson:geometry,<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:geometry,<http://www.example.com/features/P479822.187_5705866.783_120>/geojson:geometry,<http://www.example.com/features/P479816.67_5705861.672_110>/geojson:geometry,<http://www.example.com/features/P479829.666_5705858.785_120>/geojson:geometry\n"
+            },
+            {
+              "op": "shacl-report",
+              "shaclFile": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+              "focusNodes": {
+                "topo:testTopoReferencesExist": {
+                  "nodes": [
+                    "<http://www.example.com/features/DENW19AL0000giv5BL>/geojson:topology"
+                  ]
+                },
+                "topo:testTopoLinesReferencePoints": {
+                  "nodes": []
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:\n - Shape topo:testTopoReferencesExist: <http://www.example.com/features/DENW19AL0000giv5BL>/geojson:topology\n - Shape topo:testTopoLinesReferencePoints: *none*\n"
             }
           ]
-        },
-        {
-          "name": "UNKNOWN",
-          "title": "Unknown errors",
-          "entries": []
         }
       ]
     }

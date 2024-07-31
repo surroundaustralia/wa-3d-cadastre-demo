@@ -1006,10 +1006,7 @@ Links to the schema:
     "type": "@type",
     "id": "@id",
     "properties": "@nest",
-    "geometry": {
-      "@context": {},
-      "@id": "geojson:geometry"
-    },
+    "geometry": "geojson:geometry",
     "bbox": {
       "@container": "@list",
       "@id": "geojson:bbox"
@@ -1027,7 +1024,21 @@ Links to the schema:
       "@container": "@set",
       "@id": "geojson:features",
       "@context": {
-        "featureType": "@type"
+        "featureType": "@type",
+        "Prism": {
+          "@id": "geojson:Prism",
+          "@context": {
+            "base": "geojson:prismBase",
+            "lower": "geojson:prismLower",
+            "upper": "geojson:prismUpper"
+          }
+        },
+        "MultiPrism": {
+          "@id": "geojson:MultiPrism",
+          "@context": {
+            "prisms": "geojson:prisms"
+          }
+        }
       }
     },
     "links": {
@@ -1095,7 +1106,6 @@ Links to the schema:
       "@container": "@list"
     },
     "topology": {
-      "@context": {},
       "@type": "@id",
       "@id": "geojson:topology"
     },

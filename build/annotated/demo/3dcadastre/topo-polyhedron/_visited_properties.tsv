@@ -31,62 +31,53 @@ path	@id
 /place	http://purl.org/dc/terms/spatial
 /place/type	
 /place/coordRefSys	
-/place/coordRefSys/type	
-/place/coordRefSys/href	
-/place/coordRefSys/epoch	
 /place/coordinates	
 /place/bbox	
 /place/base	
-/place/base/type	
-/place/base/coordRefSys	
-/place/base/coordRefSys/type	
-/place/base/coordRefSys/href	
-/place/base/coordRefSys/epoch	
-/place/base/coordinates	
-/place/base/bbox	
 /place/lower	
 /place/upper	
 /place/prisms	
-/place/prisms/type	
-/place/prisms/coordRefSys	
-/place/prisms/coordRefSys/type	
-/place/prisms/coordRefSys/href	
-/place/prisms/coordRefSys/epoch	
-/place/prisms/base	
-/place/prisms/base/type	
-/place/prisms/base/coordRefSys	
-/place/prisms/base/coordRefSys/type	
-/place/prisms/base/coordRefSys/href	
-/place/prisms/base/coordRefSys/epoch	
-/place/prisms/base/coordinates	
-/place/prisms/base/bbox	
-/place/prisms/lower	
-/place/prisms/upper	
-/place/prisms/bbox	
 /geometry/coordRefSys	
-/geometry/coordRefSys/type	
-/geometry/coordRefSys/href	
-/geometry/coordRefSys/epoch	
-/geometry/geometries/coordRefSys	
-/geometry/geometries/coordRefSys/type	
-/geometry/geometries/coordRefSys/href	
-/geometry/geometries/coordRefSys/epoch	
 /topology	https://purl.org/geojson/vocab#topology
 /topology/type	@type
 /topology/references	https://purl.org/geojson/vocab#relatedFeatures
 /features	https://purl.org/geojson/vocab#features
-/features/type	@type
 /features/id	@id
-/features/properties	@nest
+/features/topology	https://purl.org/geojson/vocab#topology
+/features/topology/type	@type
+/features/topology/references	https://purl.org/geojson/vocab#relatedFeatures
+/features/conformsTo	
+/features/type	@type
+/features/featureType	@type
+/features/featureSchema	
+/features/time	http://purl.org/dc/terms/time
+/features/time/date	http://www.w3.org/2006/time#hasTime
+/features/time/timestamp	http://www.w3.org/2006/time#hasTime
+/features/time/interval	http://www.w3.org/2006/time#hasTime
+/features/coordRefSys	http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS
+/features/place	http://purl.org/dc/terms/spatial
+/features/place/type	
+/features/place/coordRefSys	
+/features/place/coordinates	
+/features/place/bbox	
+/features/place/base	
+/features/place/lower	
+/features/place/upper	
+/features/place/prisms	
 /features/geometry	https://purl.org/geojson/vocab#geometry
 /features/geometry/type	@type
+/features/geometry/coordRefSys	
 /features/geometry/coordinates	https://purl.org/geojson/vocab#coordinates
 /features/geometry/bbox	https://purl.org/geojson/vocab#bbox
 /features/geometry/geometries	
+/features/properties	@nest
 /features/geometry/geometries/type	@type
 /features/geometry/geometries/coordinates	https://purl.org/geojson/vocab#coordinates
 /features/geometry/geometries/bbox	https://purl.org/geojson/vocab#bbox
 /features/bbox	https://purl.org/geojson/vocab#bbox
+/conformsTo	
+/geometryDimension	
+/featureSchema	
 /features/links	http://www.w3.org/2000/01/rdf-schema#seeAlso
 /features/links/href	http://www.w3.org/ns/oa#hasTarget
 /features/links/rel	http://www.iana.org/assignments/relation
@@ -95,66 +86,6 @@ path	@id
 /features/links/hreflang	http://purl.org/dc/terms/language
 /features/links/title	http://www.w3.org/2000/01/rdf-schema#label
 /features/links/length	http://purl.org/dc/terms/extent
-/features/featureType	@type
-/features/time	http://purl.org/dc/terms/time
-/features/time/date	http://www.w3.org/2006/time#hasTime
-/features/time/timestamp	http://www.w3.org/2006/time#hasTime
-/features/time/interval	http://www.w3.org/2006/time#hasTime
-/features/coordRefSys	http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS
-/features/coordRefSys/type	
-/features/coordRefSys/href	
-/features/coordRefSys/epoch	
-/features/place	http://purl.org/dc/terms/spatial
-/features/place/type	
-/features/place/coordRefSys	
-/features/place/coordRefSys/type	
-/features/place/coordRefSys/href	
-/features/place/coordRefSys/epoch	
-/features/place/coordinates	
-/features/place/bbox	
-/features/place/base	
-/features/place/base/type	
-/features/place/base/coordRefSys	
-/features/place/base/coordRefSys/type	
-/features/place/base/coordRefSys/href	
-/features/place/base/coordRefSys/epoch	
-/features/place/base/coordinates	
-/features/place/base/bbox	
-/features/place/lower	
-/features/place/upper	
-/features/place/prisms	
-/features/place/prisms/type	
-/features/place/prisms/coordRefSys	
-/features/place/prisms/coordRefSys/type	
-/features/place/prisms/coordRefSys/href	
-/features/place/prisms/coordRefSys/epoch	
-/features/place/prisms/base	
-/features/place/prisms/base/type	
-/features/place/prisms/base/coordRefSys	
-/features/place/prisms/base/coordRefSys/type	
-/features/place/prisms/base/coordRefSys/href	
-/features/place/prisms/base/coordRefSys/epoch	
-/features/place/prisms/base/coordinates	
-/features/place/prisms/base/bbox	
-/features/place/prisms/lower	
-/features/place/prisms/upper	
-/features/place/prisms/bbox	
-/features/geometry/coordRefSys	
-/features/geometry/coordRefSys/type	
-/features/geometry/coordRefSys/href	
-/features/geometry/coordRefSys/epoch	
-/features/geometry/geometries/coordRefSys	
-/features/geometry/geometries/coordRefSys/type	
-/features/geometry/geometries/coordRefSys/href	
-/features/geometry/geometries/coordRefSys/epoch	
-/features/topology	https://purl.org/geojson/vocab#topology
-/features/topology/type	@type
-/features/topology/references	https://purl.org/geojson/vocab#relatedFeatures
-/features/conformsTo	
-/features/featureSchema	
-/conformsTo	
-/geometryDimension	
-/featureSchema	
 /timeStamp	
 /numberMatched	
 /numberReturned	

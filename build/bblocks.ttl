@@ -13,14 +13,14 @@
     rdfs:label "3D (Polyhedron) using nested Polygons and Point topology" ;
     dct:abstract "Defines options for describing 3D polyhedrons using features with Point geometry coordinates" ;
     dct:created "2023-11-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://literate-couscous-j7e78pr.pages.github.io/bblock/surround.demo.3dcadastre.topo-polyhedron" ],
+        [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://literate-couscous-j7e78pr.pages.github.io/build/generateddocs/markdown/demo/3dcadastre/topo-polyhedron/index.md" ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://literate-couscous-j7e78pr.pages.github.io/build/generateddocs/json-full/demo/3dcadastre/topo-polyhedron/index.json" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://literate-couscous-j7e78pr.pages.github.io/bblock/surround.demo.3dcadastre.topo-polyhedron" ] ;
+            rdfs:isDefinedBy "https://literate-couscous-j7e78pr.pages.github.io/build/generateddocs/json-full/demo/3dcadastre/topo-polyhedron/index.json" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2023-05-24"^^xsd:date ;
+    dct:modified "2024-07-31"^^xsd:date ;
     skos:inScheme <https://literate-couscous-j7e78pr.pages.github.io/> ;
     dcat:keyword "3D",
         "geometry",
@@ -43,14 +43,14 @@
     rdfs:label "WA Cadastre - 3D profile" ;
     dct:abstract "implements WA profile but requires points and certain parcel types to be 3D" ;
     dct:created "2023-07-31T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://literate-couscous-j7e78pr.pages.github.io/build/generateddocs/markdown/demo/3dcadastre/wa-3d/index.md" ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://literate-couscous-j7e78pr.pages.github.io/bblock/surround.demo.3dcadastre.wa-3d" ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://literate-couscous-j7e78pr.pages.github.io/build/generateddocs/json-full/demo/3dcadastre/wa-3d/index.json" ] ;
+            rdfs:isDefinedBy "https://literate-couscous-j7e78pr.pages.github.io/build/generateddocs/json-full/demo/3dcadastre/wa-3d/index.json" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://literate-couscous-j7e78pr.pages.github.io/build/generateddocs/markdown/demo/3dcadastre/wa-3d/index.md" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2023-08-08"^^xsd:date ;
+    dct:modified "2024-07-31"^^xsd:date ;
     dct:source <https://icsm-au.github.io/3d-csdm-common> ;
     skos:inScheme <https://literate-couscous-j7e78pr.pages.github.io/> ;
     dcat:keyword "3D",
@@ -98,18 +98,18 @@
         <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-07-25T00:25:17.015289"^^xsd:dateTime ;
-    prov:startedAtTime "2024-07-25T00:25:16.860297"^^xsd:dateTime ;
+    prov:endedAtTime "2024-07-31T02:20:14.039392"^^xsd:dateTime ;
+    prov:startedAtTime "2024-07-31T02:20:13.981843"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/yaml" ;
             rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
         [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:83ae44cc4659a3713c95c435b0c64b6505487a4c" ;
+            dct:hasVersion "git:ea1012bd461905385c7785c913f7d10b55418e7d" ;
             rdfs:seeAlso <https://literate-couscous-j7e78pr.pages.github.io/build/register.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.3.48" ;
+            dct:hasVersion "0.3.49" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] .
 
