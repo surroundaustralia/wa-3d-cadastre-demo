@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"/>
+    <title>WA 3D Test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body,
+        html {
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+<script type="importmap">
+    {
+          "imports": {
+              "three": "https://unpkg.com/three/build/three.module.js",
+              "controls": "https://unpkg.com/three/examples/jsm/controls/OrbitControls.js"
+          }
+      }
+</script>
+<canvas class="webgl"></canvas>
+<script type="module" src="/main.js"></script>
+</body>
+</html>
